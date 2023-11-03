@@ -529,3 +529,118 @@ Remember that
 
 $$Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}\text{while } \mu_r = 1$$
 
+Let's set $\mu_r = 1$
+Then, $Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}$
+
+So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's. 
+
+**e.g. Fresnel equations for p-polarization**
+
+$$r = \frac{E_r}{E_i} = \frac{\frac{1}{n_2}\cos\theta_t - \frac{1}{n_1}\cos\theta_i}{\frac{1}{n_2}\cos\theta_t+\frac{1}{n_1}\cos\theta_i}$$
+$$ = \frac{n_1\cos\theta_t-n_2\cos_theta_i}{n_1\cos\theta_t+n_2\cos\theta_i}$$
+
+Use Snell's law
+$$n_1\sin\theta_i = n_2\sin\theta_t$$
+$$\begin{align*}
+\Rightarrow r = \frac{\sin 2\theta_t - \sin 2\theta_i}{\sin 2\theta_t + \sin 2\theta_i} \\
+t = \frac{4\sin_theta_t\cos\theta_i}{\sin 2\theta_t + \sin 2\theta_i} \end{align*}$$
+
+For s-polarization, we have
+
+$$\begin{align*}
+r = \frac{\sin(\theta_t-\theta_i)}{\sin(\theta_t+\theta_i)}\\
+t = \frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_t+\theta_i)}
+\end{align*}$$
+
+We also have
+
+
+$$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
+\sin\theta_t &= \frac{n_1}{n_2}\sin\theta_i\\
+\cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
+\end{align*}$$
+
+Fresnel equations: 
+
+/ $n_1\cos\theta_i$ on top and bottom 
+
+$$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
+\beta&=\frac{n_2}{n_1}
+\end{align*}$$
+
+||$E^\parallel$(p)| $E^\perp$(s)|
+|---|---|---|
+| $r$ | $\frac{\alpha-\beta}{\alpha+\beta}$ | $\frac{1-\alpha\beta}{1+\alpha\beta}$ |
+| $t$ | $\frac{2\alpha}{\alpha+\beta}$ | $\frac{2}{1+\alpha\beta}$ |
+
+Remember, EM waves have an energy flux given by 
+
+$$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
+
+Intensify coefficients
+
+$$T = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
+(\frac{\alpha-\beta}{\alpha+\beta})^2 \quad (p)\\
+(\frac{1-\alpha\beta}{1+\alpha\beta})^2 \quad (s)
+\end{matrix}\right.$$
+
+$$T = \frac{I_t}{I_i} = |t|^2\frac{n_2}{n_1}\frac{\cos\theta_t}{cos\theta_i}$$
+
+where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles. 
+
+$$T = |t|^2\alpha\beta = \left\{\begin{matrix}
+\alpha\beta(\frac{2}{\alpha+\beta})^2 \quad (p)\\
+\alpha\beta(\frac{2}{1+\alpha\beta})^2 \quad (s)
+\end{matrix}\right.$$
+
+Lets check in certain cases
+
+ - $\theta_i = 0 \Rightarrow \alpha = 1$
+
+$$\begin{align*}r_s = r_p = \frac{1-\beta}{1+\beta} = \frac{n_1-n_2}{n_1+n_2}\\
+t_s = t_p = \frac{2}{1+\beta} = \frac{2n_1}{n_1+n_2}\\
+R_s = R_p = (\frac{n_1-n_2}{n_1+n_2})^2\\
+T_s = T_p - \frac{n_2}{n_1}\frac{4n_1^2}{(n_1+n_2)^2} = \frac{4n_1n_2}{(n_1+n_2)^2}\end{align*}$$
+
+**Example: air/glass interface**
+
+$$\begin{align*}n_1 = 1\quad n_2 &= 1.5\\
+r_s = r_p &= -0.2\\
+T_s = T_p &= 0.8\\
+R_s = R_p &= 0.04\\
+T_s = T_p &= 0.96\end{align*}$$
+$\Rightarrow$ 4% of light is reflected, 96% is transmitted
+
+[If $n_2$, for example,  = 1.75, $R_s = R_p = 0.074$, which is sa problem]
+
+Lets take another go at differnet angle
+
+ - $\theta_i = 90^\circ$, and set $\beta >1$
+
+ $\sin\theta_i = 1\quad \cos\theta_i = 0$
+ $\Rightarrow \alpha \rightarrow \infty$
+$$\begin{align*}r_p &= 1\quad r_s = -1\\
+t_p &= 0 \quad t_s = 0\end{align*}$$
+
+ - now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
+
+ At $\theta_c = \sin^{-1}\beta$, $\alpha = \frac{1}{\cos\theta_c}\sqrt{1-(\frac{\sin\theta_c}{\beta})^2} = 0$
+
+ Hence, we have 
+$r_p = -1\quad r_s = 1$
+$t_p = \frac{2}{\beta}\quad t_s = 2$
+
+$$\sin\theta_c = \beta$$
+
+$r_p$ vanishes at the certain angle called **"Brewster's angle"** $\theta_B$
+$r_p = \frac{\alpha-\beta}{\alpha+\beta} = 0$ when $\alpha=\beta = \frac{n_2}{n_1}$
+$$\begin{align*}
+\frac{1}{cos\theta_B}\sqrt{1-(\frac{\sin\theta_B}{\beta})^2} &= \beta\\
+\text{square both sides:}\\
+\sec^2\theta_B - \frac{1}{\beta^2}\tan^2\theta_B &= \beta^2\\
+(1-\frac{1}{\beta^2})\tan^2\theta_B &= \beta^2-1\\
+\frac{(\beta^2-1)}{\beta^2}\tan^2\theta_B &= (\beta^2-1)\\
+\Rightarrow \tan\theta_B &= \beta\end{align*}$$
+
+
+
