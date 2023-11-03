@@ -416,7 +416,9 @@ The star has luminosity L
 
 ## 4.6 EM waves - reflection and refraction 
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-c837eb54cb7df01a2652b3fa67c2e1a1.png)
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
+
 Left: 
 $$E_ie^{i(k_1x-\omega t)}+ E_re^{i(-k_1-\omega t)}$$
 
@@ -451,7 +453,7 @@ Lets now have angles
 $E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-e8fa012bb53a1e27fc049724a6987c36.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
 
 
 $$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}\omega t)}$$
@@ -494,7 +496,7 @@ We work in those steps
 
 Remid that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-8803e15f8dcd1e59d376dbb6eebc3233.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-846b6b5fd823b66d914d2dc8f0cbe159.png)
 
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
@@ -512,7 +514,8 @@ Now look for Fresned equations for p-polarizations
 2. $\mathbf E$ **perpendicular to the plane of incidence**
 > "s-like" s = senkrecht = perpendicular
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-e3027ef1380e6ce4561778c08477f7b8.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
+
 
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|

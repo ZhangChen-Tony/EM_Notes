@@ -1,4 +1,4 @@
-# 1. Potential
+# Potential
 ## 01 拉普拉斯方程和他在笛卡尔坐标系下的解
 
 ### 拉普拉斯方程其人
@@ -27,7 +27,7 @@ $\nabla^2 V = 0$
 
 这篇文章主要就是要在笛卡尔坐标系下解这个方程，在大二第一学期我们主要使用separation of variable来解，也就是说我们要假设这个V他是等于$X(x)Y(y)Z(z)$的。我们可以举一个具体的例子来熟悉这种方法
 
-<img src="./images/TOTAL/v2-d9a1510ae6106cd47b1fb93536e590e0.png" alt="20231013_143402496_iOS" style="zoom: 25%;" />
+<img src="./images/1_Potential/v2-d9a1510ae6106cd47b1fb93536e590e0.png" alt="20231013_143402496_iOS" style="zoom: 25%;" />
 
 在x = $\pm$b时，$V = V_0$；然后y=0和a的那两个面是接地的。这也就是说Z(z)这一项没有什么用 不妨把他设成1.所以我们现在有
 
@@ -205,7 +205,7 @@ $V(r,\theta)=\overset{\infty}{\underset{l=0}{\sum}}\left(\alpha r^l+\frac{\beta}
 
 其次 我们看一下示意图
 
-<img src="./images/TOTAL/v2-ee07b18b09cb2d1df99c28a6aad825df.png" alt="Image" style="zoom:33%;" />
+<img src="./images/1_Potential/v2-ee07b18b09cb2d1df99c28a6aad825df.png" alt="Image" style="zoom:33%;" />
 
 这个电势貌似和$\phi$没有什么关系！那我们就可以用那个简化版的拉普拉斯方程的解
 
@@ -291,7 +291,7 @@ $$V(\overrightarrow{r})=\frac{1}{4\pi\epsilon_0}\frac{q}{|\overrightarrow{r}-\ov
 
 (unit charge)
 
-![Image](./images/TOTAL/v2-75a2890a27cc57bdc4a8cc0de33dc4c4.png)
+![Image](./images/1_Potential/v2-75a2890a27cc57bdc4a8cc0de33dc4c4.png)
 
 This has azimuthal symmetry, so we can use the above equation
 
@@ -319,7 +319,7 @@ $$V = \frac{1}{4\pi\epsilon_0}\frac{q}{r}\sum^\infty_{l=0}(\frac{r'}{r})^lP_l(co
 
 Thus the general solution for $\overrightarrow{r}$ outside a charge distribution is
 
-![Image](./images/TOTAL/v2-fa8e7e04e3bf3ad313a05bf784d9b2f7.png)
+![Image](./images/1_Potential/v2-fa8e7e04e3bf3ad313a05bf784d9b2f7.png)
 
 $$V(\overrightarrow{r})=\frac{1}{4\pi\epsilon_0}\int_{l=0}^\infty(r')^lP_l(\cos(\gamma))\times\rho(\overrightarrow r')d\tau'$$
 
@@ -354,7 +354,7 @@ Now we can have a nice way of looking at field outside the charges using multipo
 
 Electric field can induce a dipole moment in a neutral atom
 
-<img src="./images/TOTAL/v2-4af8f8b877ec6ec19ad2aa7d7c8b6397.png" alt="Image" style="zoom:33%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-4af8f8b877ec6ec19ad2aa7d7c8b6397.png" alt="Image" style="zoom:33%;" />
 
 And the electric moment is defined as $\mathbf p = \alpha \mathbf E$ where $\alpha$ is the **polarizability** of the atom. A list of polarizability can be seen from the handout.
 
@@ -362,17 +362,17 @@ If, for example, the outside E ~ $10^6$ V/m, then the displacement would be abou
 
 Also, there are polar molecules which already have a dipole moment, but they are randomized because of the present of inner energy $K_B T$
 
-<img src="./images/TOTAL/v2-b3f7c7ce3043aaeead6c6e814ae380d4.png" alt="Image" style="zoom: 50%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-b3f7c7ce3043aaeead6c6e814ae380d4.png" alt="Image" style="zoom: 50%;" />
 
 However, an E field can line them up
 
-For a bulk of aligned dipoles (per unit volume), define the polarization $\mathbf P$ as the dipole moment per unit volume as $\mathbf P = n\mathbf p$
+For a bok of aligned dipoles (per unit volume), define the polarization $\mathbf P$ as the dipole moment per unit volume as $\mathbf P = n\mathbf p$
 
 If they are not aligned, then the polarization is zero.
 
 > Question: what is the electric potential produced by a box of dipoles?
 
-<img src="./images/TOTAL/v2-0aebbe347369877395d1f736af205cc8.png" alt="Image" style="zoom:25%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-0aebbe347369877395d1f736af205cc8.png" alt="Image" style="zoom:25%;" />
 
 $$
 \begin{align*}V(\mathbf R) &=\frac{1}{4\pi\epsilon_0}\int \frac{\mathbf P(\mathbf r)\cdot\mathbf R}{|R|^3}d^3\mathbf \tau'\\ &=\frac{1}{4\pi \epsilon_0}\int\mathbf{P(r)}\cdot\mathbf\nabla \frac{1}{R}d\tau'\\\nabla \frac{1}{R} &= -\frac{\mathbf R}{R^3}\\
@@ -381,10 +381,10 @@ $$
 \end{align*}
 $$
 
-Note that $\mathbf\nabla\cdot (f\mathbf F)=f\mathbf\nabla\cdot\mathbf F+\mathbf F\cdot\mathbf\nabla f\Rightarrow \mathbf F\cdot \nabla f - \nabla\cdot(f\mathbf F) - f\mathbf\nabla\cdot\mathbf F$ and we can also apply divergence theorem. 
+Note that $\mathbf\nabla\cdot (f\mathbf F)=f\mathbf\nabla\cdot\mathbf F+\mathbf F\cdot\mathbf\nabla f$
 
 $$
-\Rightarrow V(\mathbf r) = \frac{1}{4\pi\epsilon_0}\int \mathbf\nabla'\cdot\frac{\mathbf P(\mathbf r')}{|\mathbf R|}d\mathbf \tau' - \frac{1}{4\pi\epsilon_0}\int\frac{1}{R}\nabla\cdot\mathbf P(\mathbf r')d\mathbf \tau'
+\Rightarrow V(\mathbf r) = \frac{1}{4\pi\epsilon_0}\int \mathbf\nabla'\frac{\mathbf P(\mathbf r')}{|\mathbf R|}d\mathbf \tau' - \frac{1}{4\pi\epsilon_0}\int\frac{1}{R}\nabla\cdot\mathbf P(\mathbf r')d\mathbf \tau'
 $$
 
 $$
@@ -397,9 +397,7 @@ The derivation can be seen from Griffiths' book page 176.
 
 Remember to drop primes!
 
-In bulk, Gauss's Law is $\nabla\cdot\mathbf E = \frac{\rho}{\epsilon_0}$, but $\rho = \rho_{free} + \rho_{bound}$ 
-
-remember that $\rho_{bound} = -\nabla\cdot\mathbf P$ and hence $\nabla\cdot\mathbf E = \frac{\rho_{free}}{\epsilon_0} - \frac{\nabla\cdot\mathbf P}{\epsilon_0}$
+In bulk, Gauss's Law is $\nabla\cdot\mathbf E = \frac{\rho}{\epsilon_0}$, but $\rho = \rho_{free} + \rho_{bound}$ remember that $\rho_{bound} = -\nabla\cdot\mathbf P$ and hence $\nabla\cdot\mathbf E = \frac{\rho_{free}}{\epsilon_0} - \frac{\nabla\cdot\mathbf P}{\epsilon_0}$
 
 We define electric displacement
 
@@ -468,7 +466,7 @@ $$
 \overrightarrow\nabla\times\overrightarrow{D}=\epsilon\overrightarrow\nabla\times\overrightarrow E+\overrightarrow\nabla\times\overrightarrow P\ne 0
 $$
 
-## Boundary conditions
+## Boundrary conditions
 
 $E_{//}$ is continuous
 
@@ -496,7 +494,7 @@ but $E_\perp$ may not be continuous if we have bound charges at the interface
 
 *Example*
 
-![Image](./images/TOTAL/v2-e013e9f7011c9cea9e3df1e9ddef4a85.png)
+![Image](./images/2_Electric_Field_In_Matter/v2-e013e9f7011c9cea9e3df1e9ddef4a85.png)
 
 $$
 \Rightarrow E_0//x
@@ -643,7 +641,7 @@ Current loop:
 
 $$A(r) = \frac{\mu_0I}{4\pi} \oint \frac{1}{|\mathbf{r}-\mathbf{r'}|}d\mathbf{l'}$$
 
-![Image](./images/TOTAL/v2-a7283b9bf163233310b2636b0c22e68a.png)
+![Image](./images/3_Magnetization/v2-a7283b9bf163233310b2636b0c22e68a.png)
 
 recall the expansion
 
@@ -682,7 +680,7 @@ $$\mathbf B(\mathbf r) = \nabla\times\mathbf A = \frac{\mu_0}{4\pi r^3}  m\sin(\
 
 which is same as electric dipole with $\frac{P}{4\pi\epsilon_0}\rightarrow\frac{\mu_0m}{4\pi}$
 
-![Image](./images/TOTAL/v2-b98211361837f1214ba4377c0e33c180.png)
+![Image](./images/3_Magnetization/v2-b98211361837f1214ba4377c0e33c180.png)
 
 Field patterns look the same at large r, but at small r, the magnetic field is not singular.
 
@@ -696,7 +694,7 @@ There are three main effects:
 
 2. Paramagnetism $\rightarrow \mathbf{M} ∝ +\mathbf B$ and it's stronger
 > That is often shown in materials with unpaired "spins"
-> ![Image](./images/TOTAL/v2-be71f0aeb778b21ad0e923d3e0c7ce7c.png)
+> ![Image](./images/3_Magnetization/v2-be71f0aeb778b21ad0e923d3e0c7ce7c.png)
 > ($\mathbf{M} ∝ \mathbf B$ but only at small B)
 > Example: $CuSO_4\cdot5H_2O$
 
@@ -839,7 +837,7 @@ Then we can use the Laplace equation to solve for $\phi_m$
 
 There is an energy cost due to the stray field of the magnetic dipoles. 
 
-![Image](./images/TOTAL/v2-37fef396b890a953c83746200894eb23.png)
+![Image](./images/3_Magnetization/v2-37fef396b890a953c83746200894eb23.png)
 
 From the picture having stray field, it can be seen that on the tip and bottom of the field, there is a divergence of magnitization, leading to divergence in H. Meaning that field spreads out whenever you have magnetic moment going into the surface and not flowing out.  
 
@@ -848,11 +846,11 @@ The energy cost would be
 $$\int\frac{B^2}{2\mu_0}d\tau$$
 $\Rightarrow$ It is energetic flavorable to form domains
 
-![Image](./images/TOTAL/v2-3e8f970cbb5e9d129b6f85b9f2f26f3b.png)
+![Image](./images/3_Magnetization/v2-3e8f970cbb5e9d129b6f85b9f2f26f3b.png)
 
 This will cost low energy since there is no stray field and hence no divergence in H. (Average over the surface, M is zero)
 
-![Image](./images/TOTAL/v2-1dddfc47563a7bfe1965f162b4dbdc41.png)
+![Image](./images/3_Magnetization/v2-1dddfc47563a7bfe1965f162b4dbdc41.png)
 
 When applying a B field, the correlated domain is expanded and finally they are all aligned.
 
@@ -860,7 +858,7 @@ So, the magnetization process involves moving domain walls.
 
 $\Rightarrow$ The process is highly non-linear
 $\Rightarrow$ hysterisis loop
-![Image](./images/TOTAL/v2-d3701ddc549859182bd617dfdde1c37e.png)
+![Image](./images/3_Magnetization/v2-d3701ddc549859182bd617dfdde1c37e.png)
 States that is interesting
 1. Saturation (right up)
 2. Remanence (middle up)
@@ -888,7 +886,7 @@ $H_c$, $M_r$ are small
 
 Example: Magnitization of a ring 
 Iron ring, radius r, and current I with N terms used to magnitize the ring
-![Image](./images/TOTAL/v2-a9fbe05aa6f76224574afebc89dc2a82.png)
+![Image](./images/3_Magnetization/v2-a9fbe05aa6f76224574afebc89dc2a82.png)
 
 Have a Amperian loop around the ring, then use
 $$\oint\mathbf H\cdot d\mathbf l = NI$$
@@ -903,7 +901,7 @@ Hence B = $\mu_0\mu_rH = \mu_0\mu_r\frac{NI}{2\pi r}$
 
 Now lets put a gap in the ring
 
-![Image](./images/TOTAL/v2-96ab8ac13db4acd2616ef45e808c95a0.png)
+![Image](./images/3_Magnetization/v2-96ab8ac13db4acd2616ef45e808c95a0.png)
 
 The cutout, x, would much less than r
 
@@ -1082,7 +1080,7 @@ Which gives the same answer because $v = \frac{c}{n} = \frac{\omega}{k} = \frac{
 
 which is this wave
 
-<img src="./images/TOTAL/v2-9b07722264d36e00a457d3cc47c8b487.jpg" alt="Image" style="zoom:33%;" />
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-9b07722264d36e00a457d3cc47c8b487.jpg" alt="Image" style="zoom:33%;" />
 
 ## 4.3 conductors
 
@@ -1278,14 +1276,14 @@ We could say that, therefore $\mathbf S$ is the energy flux density, or the rate
 
 Example: a capacitor
 
-![Image](./images/TOTAL/v2-d088b7588af2470c7dc937a7174eae40.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png)
 
 The stored energy increase at rate 
 
 $$\dot{U} = \frac{Q}{C}\frac{dQ}{dt} \quad U = \frac{Q^2}{2C}$$
 
 also:
-![Image](./images/TOTAL/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png)
 
 Hence, we have 
 
@@ -1295,7 +1293,7 @@ where $S = EH = \frac{Q}{dc}\frac{\frac{dQ}{dt}}{2\pi r}$
 
 There is another example
 
-![Image](./images/TOTAL/v2-b8d5f75737c4aa4fc3c712948225873b.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-b8d5f75737c4aa4fc3c712948225873b.png)
 
 $$\begin{align*}H \cdot S\pi a &= I\\
 E &= \frac{V}{l}\\
@@ -1342,7 +1340,9 @@ The star has luminosity L
 
 ## 4.6 EM waves - reflection and refraction 
 
-![Image](./images/TOTAL/v2-c837eb54cb7df01a2652b3fa67c2e1a1.png)
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
+
 Left: 
 $$E_ie^{i(k_1x-\omega t)}+ E_re^{i(-k_1-\omega t)}$$
 
@@ -1377,7 +1377,7 @@ Lets now have angles
 $E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
 
-![Image](./images/TOTAL/v2-e8fa012bb53a1e27fc049724a6987c36.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
 
 
 $$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}\omega t)}$$
@@ -1420,7 +1420,7 @@ We work in those steps
 
 Remid that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
 
-![Image](./images/TOTAL/v2-8803e15f8dcd1e59d376dbb6eebc3233.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-846b6b5fd823b66d914d2dc8f0cbe159.png)
 
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
@@ -1438,7 +1438,8 @@ Now look for Fresned equations for p-polarizations
 2. $\mathbf E$ **perpendicular to the plane of incidence**
 > "s-like" s = senkrecht = perpendicular
 
-![Image](./images/TOTAL/v2-e3027ef1380e6ce4561778c08477f7b8.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
+
 
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
@@ -1454,3 +1455,121 @@ $$\Rightarrow H_x continuous \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1
 Remember that 
 
 $$Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}\text{while } \mu_r = 1$$
+
+Let's set $\mu_r = 1$
+Then, $Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}$
+
+So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's. 
+
+**e.g. Fresnel equations for p-polarization**
+
+$$r = \frac{E_r}{E_i} = \frac{\frac{1}{n_2}\cos\theta_t - \frac{1}{n_1}\cos\theta_i}{\frac{1}{n_2}\cos\theta_t+\frac{1}{n_1}\cos\theta_i}$$
+$$ = \frac{n_1\cos\theta_t-n_2\cos_theta_i}{n_1\cos\theta_t+n_2\cos\theta_i}$$
+
+Use Snell's law
+$$n_1\sin\theta_i = n_2\sin\theta_t$$
+$$\begin{align*}
+\Rightarrow r = \frac{\sin 2\theta_t - \sin 2\theta_i}{\sin 2\theta_t + \sin 2\theta_i} \\
+t = \frac{4\sin_theta_t\cos\theta_i}{\sin 2\theta_t + \sin 2\theta_i} \end{align*}$$
+
+For s-polarization, we have
+
+$$\begin{align*}
+r = \frac{\sin(\theta_t-\theta_i)}{\sin(\theta_t+\theta_i)}\\
+t = \frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_t+\theta_i)}
+\end{align*}$$
+
+We also have
+
+
+$$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
+\sin\theta_t &= \frac{n_1}{n_2}\sin\theta_i\\
+\cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
+\end{align*}$$
+
+Fresnel equations: 
+
+/ $n_1\cos\theta_i$ on top and bottom 
+
+$$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
+\beta&=\frac{n_2}{n_1}
+\end{align*}$$
+
+||$E^\parallel$(p)| $E^\perp$(s)|
+|---|---|---|
+| $r$ | $\frac{\alpha-\beta}{\alpha+\beta}$ | $\frac{1-\alpha\beta}{1+\alpha\beta}$ |
+| $t$ | $\frac{2\alpha}{\alpha+\beta}$ | $\frac{2}{1+\alpha\beta}$ |
+
+Remember, EM waves have an energy flux given by 
+
+$$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
+
+Intensify coefficients
+
+$$T = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
+(\frac{\alpha-\beta}{\alpha+\beta})^2 \quad (p)\\
+(\frac{1-\alpha\beta}{1+\alpha\beta})^2 \quad (s)
+\end{matrix}\right.$$
+
+$$T = \frac{I_t}{I_i} = |t|^2\frac{n_2}{n_1}\frac{\cos\theta_t}{cos\theta_i}$$
+
+where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles. 
+
+$$T = |t|^2\alpha\beta = \left\{\begin{matrix}
+\alpha\beta(\frac{2}{\alpha+\beta})^2 \quad (p)\\
+\alpha\beta(\frac{2}{1+\alpha\beta})^2 \quad (s)
+\end{matrix}\right.$$
+
+Lets check in certain cases
+
+ - $\theta_i = 0 \Rightarrow \alpha = 1$
+
+$$\begin{align*}r_s = r_p = \frac{1-\beta}{1+\beta} = \frac{n_1-n_2}{n_1+n_2}\\
+t_s = t_p = \frac{2}{1+\beta} = \frac{2n_1}{n_1+n_2}\\
+R_s = R_p = (\frac{n_1-n_2}{n_1+n_2})^2\\
+T_s = T_p - \frac{n_2}{n_1}\frac{4n_1^2}{(n_1+n_2)^2} = \frac{4n_1n_2}{(n_1+n_2)^2}\end{align*}$$
+
+**Example: air/glass interface**
+
+$$\begin{align*}n_1 = 1\quad n_2 &= 1.5\\
+r_s = r_p &= -0.2\\
+T_s = T_p &= 0.8\\
+R_s = R_p &= 0.04\\
+T_s = T_p &= 0.96\end{align*}$$
+$\Rightarrow$ 4% of light is reflected, 96% is transmitted
+
+[If $n_2$, for example,  = 1.75, $R_s = R_p = 0.074$, which is sa problem]
+
+Lets take another go at differnet angle
+
+ - $\theta_i = 90^\circ$, and set $\beta >1$
+
+ $\sin\theta_i = 1\quad \cos\theta_i = 0$
+ $\Rightarrow \alpha \rightarrow \infty$
+$$\begin{align*}r_p &= 1\quad r_s = -1\\
+t_p &= 0 \quad t_s = 0\end{align*}$$
+
+ - now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
+
+ At $\theta_c = \sin^{-1}\beta$, $\alpha = \frac{1}{\cos\theta_c}\sqrt{1-(\frac{\sin\theta_c}{\beta})^2} = 0$
+
+ Hence, we have 
+$r_p = -1\quad r_s = 1$
+$t_p = \frac{2}{\beta}\quad t_s = 2$
+
+$$\sin\theta_c = \beta$$
+
+$r_p$ vanishes at the certain angle called **"Brewster's angle"** $\theta_B$
+$r_p = \frac{\alpha-\beta}{\alpha+\beta} = 0$ when $\alpha=\beta = \frac{n_2}{n_1}$
+$$\begin{align*}
+\frac{1}{cos\theta_B}\sqrt{1-(\frac{\sin\theta_B}{\beta})^2} &= \beta\\
+\text{square both sides:}\\
+\sec^2\theta_B - \frac{1}{\beta^2}\tan^2\theta_B &= \beta^2\\
+(1-\frac{1}{\beta^2})\tan^2\theta_B &= \beta^2-1\\
+\frac{(\beta^2-1)}{\beta^2}\tan^2\theta_B &= (\beta^2-1)\\
+\Rightarrow \tan\theta_B &= \beta\end{align*}$$
+
+
+
+
+
