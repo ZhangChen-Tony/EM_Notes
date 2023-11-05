@@ -931,7 +931,7 @@ Is could be very large if x is small. But for that condition to work, you need $
 Conservation of charge
 
 $$
-\mathbf{\nabla*J_s} = -\frac{\partial \rho_f}{\partial t}
+\mathbf{\nabla\cdot J_s} = -\frac{\partial \rho_f}{\partial t}
 $$
 
 However, this is incompatible with
@@ -1569,7 +1569,104 @@ $$\begin{align*}
 \frac{(\beta^2-1)}{\beta^2}\tan^2\theta_B &= (\beta^2-1)\\
 \Rightarrow \tan\theta_B &= \beta\end{align*}$$
 
+**Method of producing polarized light**
 
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-c63f126caa420d0b48e1c0b329782a06.png)
+
+Reflectted light polarized with $\mathbf E$ perpendicular to the plane of incidence
+
+Polarizing sunglasses with transmission axis vertical reduce glare because reflected light is mainly horizontally polarized.
+
+**Total internal reflection**
+
+$$\begin{align*}
+n_1\sin\theta_i = n_2\sin\theta_t\\
+\sin\theta_t = \frac{\sin\theta_i}{n_2/n_1}\\
+\end{align*}$$
+
+Since $n_2<n_1$, there will be total internal reflection when $\sin\theta_t>1$
+
+For transmitted wave, its like
+ - $e^{i(\mathbf{k\cdot r}-\omega t)}$ in medium 
+   = $e^{i(k_2[x\sin\theta_t+z\cos\theta_t]-\omega t)}$
+   since $z\cos\theta t = 1-\sin^2 \theta_t$ = $\underbrace{e^{i(k_2x\sin\theta_t-\omega_t)}}_{wave}\underbrace{e^{-(\sin^2\theta_t-1)^{\frac{1}{2}}k_2z}}_{e^{-z/\delta}}$ where $\delta = \frac{\lambda_2}{2\pi}\frac{1}{(\sin^2\theta_t-1)^{\frac{1}{2}}}$
+    This is called an *evanescent wave*
+
+Lets now consider the **Plane travelling wave**
+$$\begin{align*}E_x &= E_0e^{i(kz-\omega t)}\\
+\mathbf{\nabla\times E} &= -\mathbf{\dot{B}} = i\omega B\\
+\mathbf B &= \frac{1}{i\omega}\left|\begin{matrix}\mathbf{\hat{i}}&&\mathbf{\hat{j}}&&\mathbf{\hat{k}}\\
+\partial x&&\partial y&&\partial z\\
+E_x &&0&&0\end{matrix}\right|\\
+&=\frac{1}{i\omega}\left(\begin{matrix}0\\\partial_z E_x\\-\partial_yE_x\end{matrix}\right)\\
+&= \frac{1}{i\omega}\left(\begin{matrix}0\\ikE_x\\0\end{matrix}\right)\\
+&= \frac{E_x}{\omega/k}\mathbf{\hat{y}}\\
+&= \frac{E_x}{c}\mathbf{\hat{y}}\end{align*}$$
+
+For s-polarization, $\theta_i>\theta_c$, we have
+
+$$\begin{align*}
+\sin\theta_t = \frac{\sin\theta_i}{n_2/n_1}>1\\
+\cos\theta_t = i\sqrt{\sin^2\theta_t-1}\\
+r_s = \frac{n_1\cos\theta_i-n_2\cos\theta_t}{n_1\cos\theta_i+n_2\cos\theta_t}\\
+ = \frac{A - iB}{A+iB}\\
+ \Rightarrow R_s = |r_s|^2 = \frac{A^2+B^2}{A^2+B^2} = 1\\
+t_s = \frac{2n_1\cos\theta_i}{n_1\cos\theta_i+n_2\cos\theta_t} = \frac{2A}{A+iB}\end{align*}$$
+
+So is complex
+$$\Rightarrow \mathbf E_t = \mathbf{\hat{y}}t_sE_ie^{i(k_2[x\sin\theta_t-\omega t])}e^{-z/\delta}$$
+
+where $\delta = \frac{\lambda_2}{2\pi}\frac{1}{(\sin^2\theta_t-1)^{\frac{1}{2}}}$
+$$\begin{align*}\mathbf{\nabla\times E} &= -\dot{\mathbf{B}} = i\omega\mathbf B\\
+\mathbf B &= \frac{1}{i\omega}\left|\begin{matrix}\mathbf{\hat{i}}&&\mathbf{\hat{j}}&&\mathbf{\hat{k}}\\\partial_x&&\partial_y&&\partial_z\\0&&E_t&&0\end{matrix}\right|\\
+&=\frac{1}{i\omega}\left(\begin{matrix}-\partial_zE_t\\ 0 \\ \partial_xE_t\end{matrix}\right)\\
+&=\left(\begin{matrix}\frac{iE_t}{\omega\delta}\\0\\k_2\sin\theta_tE_t/\omega\end{matrix}\right)\end{align*}$$
+
+$\Rightarrow B_z$ is in phase with $E_y$ 
+    $\Rightarrow$ transport of energy along x
+    $B_x$ is out of phase with $E_y$
+    $\Rightarrow$ no transport of energy along z
+    $$<\mathbf S> = <\mathbf{E\times H^*}>$$
+    $\mathbf H^*$ is the complex conjugate of H
+
+**Reminder on conductors**
+$$\begin{align*}\mathbf{\nabla\times(\nabla\times E) = \nabla(\nabla\cdot E)-\nabla^2E} - \frac{\partial}{\partial t}\mathbf{\nabla\times B}\\
+\mu_0\mu_r\sigma\mathbf E + \mu_0\mu_r\sigma_0\sigma_r\frac{\partial \mathbf E}{\partial t} = 0\quad\text{if good conductor}\\
+\nabla^2\mathbf E = \mu_0\sigma\frac{\partial \mathbf E}{\partial t}\\
+-\tilde k^{2} = i\omega\mu_0\sigma\\
+\Rightarrow \tilde k = k+i\kappa\quad k = \kappa = \sqrt{\frac{\mu_0\sigma\omega}{2}}\\
+\mathbf{\nabla\times E = -\mathbf{\dot{B}}}\\
+-\frac{\partial B_y}{\partial t} = (\mathbf{\nabla\times E})_y =\frac{\partial E_x}{\partial z}\\
+i\omega B_0= = i(k+i\kappa)E_0\\
+Z = \frac{E_0}{H_0} = \frac{E_0}{B_0/\mu_0} = \frac{\mu_0\omega}{k+i\kappa}\\
+ = \sqrt{\frac{2\mu_0\omega}{\sigma}}\frac{1}{1+i}\\
+\Rightarrow Z = \sqrt{\frac{\mu_0\omega}{2\sigma}}(1-i)\end{align*}$$
+
+**Reflection from a meatal surface**
+
+|air|metal|
+|---|---|
+|$Z_1 = \sqrt{\frac{\mu_0}{\epsilon_0}}$|$Z_2 = \sqrt{\frac{\mu_0\omega}{2\sigma}}(1-i)$|
+
+$|z_2|\ll |Z_1|$ for a good conductor because $\sigma \gg \epsilon_0\epsilon_r\omega$
+
+write $\alpha = \frac{\sqrt{\frac{\mu_0\omega}{2\sigma}}}{\sqrt{\frac{\mu_0}{\epsilon_0}}} = \sqrt{\frac{\omega\epsilon_0}{2\sigma}}\ll1$
+
+
+$$\begin{align*}
+r &= \frac{E_r}{E_i}\quad\text{normal incidence}\\
+&=\frac{Z_2-Z_1}{Z_2+Z_1} \\
+&= \frac{Z_2/Z_1-1}{Z_2/Z-1+1}\\
+&= \frac{\alpha(1-i)-1}{\alpha(1-i)+1}\\
+&\approx \frac{1-2\alpha + \cdot\cdot\cdot}{1+2\alpha+\cdot\cdot\cdot}\\
+&= 1-4\alpha+O(\alpha^2)\\
+&= 1-\frac{2\omega\delta}{c}+O(\alpha^2)\\
+&= 1-\frac{4\pi\delta}{\lambda}+O(\alpha^2)\end{align*}$$
+
+where $\delta =  \sqrt{\frac{2}{\omega\mu_0\sigma}}$ is the skin depth
+$\Rightarrow$ most of the EM wave intensity is reflected
+$\Rightarrow$ metals are shiny!
 
 
 
