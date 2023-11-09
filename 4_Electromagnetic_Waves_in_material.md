@@ -148,7 +148,7 @@ Remember that $\mathbf{\nabla\times E = -\dot B}$, and use E, B $\propto e^{i(\m
 $$
 \begin{align*}i\mathbf{k\times E} &= -(-i\omega)\mathbf B\\
 &= i\omega\mu_0\mu_r\mathbf H\\
-\Rightarrow z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}} 
+\Rightarrow Z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}} 
 \end{align*}
 $$
 
@@ -229,8 +229,8 @@ $$\begin{align*}
 (k+i\kappa)^2 &= k^2-\kappa^2+2ik\kappa\\
 k^2-\kappa^2 &= \mu_0\epsilon_0\omega^2\\
 2k\kappa &= \mu\sigma\omega\Rightarrow k = \frac{\mu\sigma\omega}{2\kappa}\\
-0 &= \left(\frac{\mu\sigma\omega}{2}\right)^2\frac{1}{k^2} - k^2 - \mu\epsilon_0\omega^2\\
-0 &= (k^2)^2 + \mu\epsilon\omega^2(k^2)-\left(\frac{\mu\sigma\omega}{2}\right)^2\\
+0 &= \left(\frac{\mu\sigma\omega}{2}\right)^2\frac{1}{\kappa^2} - \kappa^2 - \mu\epsilon_0\omega^2\\
+0 &= (\kappa^2)^2 + \mu\epsilon\omega^2(\kappa^2)-\left(\frac{\mu\sigma\omega}{2}\right)^2\\
 \kappa^2 &= -\frac{\mu\epsilon\omega^2}{2}\pm\sqrt{\left(\frac{\mu\epsilon\omega^2}{2}\right)^2+\left(\frac{\mu\sigma\omega}{2}\right)^2}\\
 \kappa^2 &= \frac{\mu\epsilon\omega^2}{2}\left[\pm\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)^2}-1\right]
 \end{align*}$$
@@ -238,9 +238,9 @@ k^2-\kappa^2 &= \mu_0\epsilon_0\omega^2\\
 Taking the positive root
 $$\Rightarrow \kappa = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)^2}-1}$$
 
-Sub into origional equation
+Sub into original equation
 
-$$k = \frac{\mu\sigma\omega}{2\kappa} = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)}+1}$$
+$$k = \frac{\mu\sigma\omega}{2\kappa} = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)^2}+1}$$
 $$\Rightarrow \mathbf E = \mathbf E_0\hat{\mathbf{x}}\underbrace{e^{-\kappa z}}_{e^{-\frac{z}{\delta}}}e^{i(\mathbf{k\cdot r}-\omega t)}$$
 
 Where $\delta = \frac{1}{\kappa}$ is the *skin depth* 
@@ -255,9 +255,9 @@ $$\nabla^2\mathbf E = \mu\sigma\frac{\partial \mathbf E}{\partial t} + \mu\epsil
 
 We could also neglect the last term, since $\frac{\partial^2 \mathbf E}{\partial t^2} \ll \frac{\partial \mathbf E}{\partial t}$
 
-$$\begin{align*}\Rightarrow\widetilde k^2 = i\mu\sigma\omega\\
-\Rightarrow \widetilde k = \frac{1+i}{\sqrt{2}}sqrt{\mu\sigma\omega}\\
-\Rightarrow \widetilde k = \kappa = \sqrt{\frac{\mu\sigma\omega}{2}}\\
+$$\begin{align*}&\Rightarrow\widetilde k^2 = i\mu\sigma\omega\\
+&\Rightarrow \widetilde k = \frac{1+i}{\sqrt{2}}\sqrt{\mu\sigma\omega}\\
+&\Rightarrow \widetilde k = \kappa = \sqrt{\frac{\mu\sigma\omega}{2}}\\
 \end{align*}$$
 
 Hence, we could have
@@ -300,14 +300,14 @@ For a good conductor, $\sigma \gg \epsilon\omega$, hence $\phi \rightarrow \tan^
 
 So this means that B lags behind E in a metal
 
-## Poyting vectors
+## 4.4 Poynting vectors
 
 Work done on charge
 
-$$\delta q = \rho=delta \tau$$
+$$\delta q = \rho=\delta \tau$$
 
-$$\begin{align*}\mathbf\delta F &= \delta q(\mathbf{E +V\times B})\\
-\mathbf{\delta F\cdot d l} &= \delta q(\mathbf{E+V\times B})\cdot \mathbf v\delta t\\
+$$\begin{align*}\mathbf\delta F &= \delta q(\mathbf{E +v\times B})\\
+\mathbf{\delta F\cdot d l} &= \delta q(\mathbf{E+v\times B})\cdot \mathbf v\delta t\\
 &= \mathbf{E\cdot J_f}\delta\tau\delta t\end{align*}$$
 
 where $\mathbf J_f$ eaquals to $\rho\mathbf v$
@@ -341,14 +341,14 @@ Remember that
 $$\left.\begin{align*} \frac{1}{2}\epsilon_0E^2 &= \frac{1}{2}DE \\
 \frac{B^2}{2\mu_0} &= \frac{1}{2}BH\end{align*}\right\}\text{In free space}$$
 
-Brining everything together, we could get
+Bringing everything together, we could get
 $$\Rightarrow \frac{d}{dt}(u_{\text{mech}}+u_{\text{EM}}) + \mathbf{\nabla\cdot S} = 0$$
 
 Where $\mathbf S$ is the poyting vector, or equiviantly,
 
 $$\frac{d}{dt}\int(u_{\text{mech}}+u_{\text{EM}})d\tau + \oint \mathbf S\cdot d\mathbf a = 0$$
 
-We could say that, therefore $\mathbf S$ is the energy flux density, or the rate of flow of energty per unit area in the direction of S.
+We could say that, therefore $\mathbf S$ is the energy flux density, or the rate of flow of energy per unit area in the direction of S.
 
 Example: a capacitor
 
@@ -412,7 +412,25 @@ FYI, $P_{atm} = 10^5Pa$
 
 i.e. matter is falling onto it uniformly  in all directions
 
-The star has luminosity L 
+The star has luminosity L (e.g. $L_{sun} = 4\times 10^{26}$w)
+
+Energy flux = $\frac{L}{4\pi R^2}[Wm^{-2}]$
+
+Radiation pressure: $\frac{L}{4\pi R^2C}$
+
+Outward:
+
+Force/unit mass = $k\frac{L}{4\pi R^2 C}$ where k is the opacity, which is area/unit mass, which is a constant
+
+
+
+Inward: Force due to gravity/unit mass = $\frac{GM}{R^2}$
+
+Since they balance, we have
+
+$$\Rightarrow L = \frac{4\pi CGM}{k}$$
+
+which is called Eddington Limit (Upper limit of luminosity of stars that accrete (isotopically))
 
 ## 4.6 EM waves - reflection and refraction 
 
@@ -420,18 +438,18 @@ The star has luminosity L
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
 
 Left: 
-$$E_ie^{i(k_1x-\omega t)}+ E_re^{i(-k_1-\omega t)}$$
+$$E_ie^{i(k_1z - \omega t)}+ E_re^{i(-k_1z-\omega t)}$$
 
 Right: 
-$$E_te^{i(k_2x-\omega t)}$$
+$$E_te^{i(k_2z-\omega t)}$$
 
-Using electrom boundery conditions, we could get
+Using electromagnetic boundary conditions, we could get
 
 $E^\parallel$ is continuous
 $$E^\parallel_i + E^\parallel_r = E^\parallel_t$$
 
 $H^\parallel$ is continuous
-$$\frac{E_i}{Z^1} - \frac{E_r}{Z_1} = \frac{E_f}{Z_2}$$
+$$\frac{E_i}{Z_1} - \frac{E_r}{Z_1} = \frac{E_t}{Z_2}$$
 
 Putting two equations together
 
@@ -441,7 +459,7 @@ Where $Z = \sqrt{\frac{\mu}{\epsilon}}$
 
 |Poyting vector| $= S = |\mathbf{E\times H}| = \frac{E^2}{Z}$
 
-We expect $S_{incident} = S_{reflected} + S_{transmitted}$
+We expect $S_\text{incident} = S_\text{reflected} + S_\text{transmitted}$
 
 Where they equal to 
 
@@ -450,19 +468,19 @@ $\frac{E_i^2}{Z_1}+\frac{E_r^2}{Z_1}=\frac{E_t^2}{Z_2}$
 separately
 
 Lets now have angles
-$E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
+$\mathbf E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
 
 
-$$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}\omega t)}$$
+$$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}-\omega t)}$$
 
-$$E_te^{i(\mathbf{k_t\cdot r}-\omega t)}$$
+$$\mathbf E_te^{i(\mathbf{k_t\cdot r}-\omega t)}$$
 
 Choose $\mathbf k_i$ in x-z plane
 
-At z = 0, $E_\parallel$ is cointinuous and this holds for all x y and t
+At z = 0, $E_\parallel$ is continuous and this holds for all x y and t
 $\Rightarrow$ $\omega$ must be the same
 
 $\Rightarrow \mathbf{k_i\cdot r = k_r\cdot r = k_t\cdot r}$ for all x, y at z=0
@@ -481,7 +499,7 @@ $$\begin{align*}|\mathbf{k_i|=k_r|}&=k_1\\
 
 Remember that $\frac{\omega}{k}=\frac{c}{n}$, And the last two would lead to 
 
-$$\frac{\sin\theta_t}{\sin\theta_i} = \frac{k_1}{k_2} = \frac{n_2}{n_1}\text{-law of refraction, or snell's law}$$
+$$\frac{\sin\theta_t}{\sin\theta_i} = \frac{k_1}{k_2} = \frac{n_2}{n_1}\quad\text{law of refraction, or snell's law}$$
 
 Where $n = \sqrt{\epsilon_r\mu_r}$
 
@@ -506,10 +524,10 @@ Remid that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
 
 $E_\parallel$ continuous $\Rightarrow E_x$ continuous $\Rightarrow E_i\cos\theta_i + E_r\cos\theta_i = E_t\cos\theta_t$
 
-$$\begin{align*}\frac{E_r}{E_i} &= \frac{Z_2\cos_theta_i-Z_1\cos\theta_i}{Z_2\cos\theta_1 + Z_1\cos\theta_i}\\
+$$\begin{align*}\frac{E_r}{E_i} &= \frac{Z_2\cos\theta_i-Z_1\cos\theta_i}{Z_2\cos\theta_1 + Z_1\cos\theta_i}\\
 \frac{E_t}{E_i} &= \frac{2Z_2\cos\theta_i}{Z_2\cos\theta_i + Z_1\cos\theta_i}\end{align*}$$
 
-Now look for Fresned equations for p-polarizations
+Now look for Fresnel equations for p-polarizations
 
 2. $\mathbf E$ **perpendicular to the plane of incidence**
 > "s-like" s = senkrecht = perpendicular
@@ -729,7 +747,6 @@ $|z_2|\ll |Z_1|$ for a good conductor because $\sigma \gg \epsilon_0\epsilon_r\o
 
 write $\alpha = \frac{\sqrt{\frac{\mu_0\omega}{2\sigma}}}{\sqrt{\frac{\mu_0}{\epsilon_0}}} = \sqrt{\frac{\omega\epsilon_0}{2\sigma}}\ll1$
 
-
 $$\begin{align*}
 r &= \frac{E_r}{E_i}\quad\text{normal incidence}\\
 &=\frac{Z_2-Z_1}{Z_2+Z_1} \\
@@ -744,3 +761,163 @@ where $\delta =  \sqrt{\frac{2}{\omega\mu_0\sigma}}$ is the skin depth
 $\Rightarrow$ most of the EM wave intensity is reflected
 $\Rightarrow$ metals are shiny!
 
+## 4.7 Plasmas
+
+Plasmas are neutral gas of charged particles, such as ions and free electrons (like metals)
+
+**Examples: where you can find plasma**
+
+- metal
+- ionosphere
+- stars
+- fusion reactor
+- interstellar gas /intergalactic medium
+- supernova remnants
+- radio galaxies / quasars
+- lightening
+- aurorae
+- fire
+- plasma displays
+
+Its density varies from $10^2 - 10^{35}kg/m^3$, temperature is $10^0-10^{13}k$
+
+we would only focus on cold plasma
+
+
+
+Lets consider a slab of plasma
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-cda26930e63c970d8f5143f39734a44f.png)
+
+having nnumber density n
+
+the positive ions are fixed in place, and now lets move electrons by distance $\xi$
+
+$\rightarrow$ E field: $E = \frac{\sigma}{\epsilon_0}$ and $\sigma = ne\xi$
+
+$$\begin{align*}m\ddot{\xi}& = -eE\quad\text{where} E = \frac{ne\xi}{\epsilon_0}\\
+\Rightarrow \ddot{\xi}+\omega_p^2\xi&=0\quad\text{which is SHM}\\
+\text{where } \omega_p^2&=\frac{ne^2}{\epsilon_0m}\end{align*}$$
+
+This is the SHM at the <u>plasma frequency $\omega_p$</u> 
+
+
+
+Now, lets drive charges with EM wave $\mathbf Ee^{-i\omega t}$ (we could ignore B if $v\ll c$)
+
+Hence, we could get $\mathbf\xi = \mathbf\xi_0e^{-i\omega t}$
+
+$-m\omega^2\mathbf \xi_0 = -e\mathbf E$
+$$\begin{align*}\mathbf P &= -ne\mathbf\xi_0=-\frac{ne^2}{m\omega^2}\mathbf E\\
+&= (\epsilon_r-1)\epsilon_0\mathbf E\\
+\Rightarrow \underbrace{\epsilon_r}_{\tilde n^2} &= 1-\frac{\omega_p^2}{\omega^2}\end{align*}$$
+
+where $\tilde n^2$ is the refractive index, and that can be imaginary 
+
+we could plot the relation between $\omega$ and $\epsilon_r$
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-9e0535588696eb60239c846f041b4009.png)
+
+at $\omega>\omega_p$, $\tilde n$ is real, hence EM waves can propagate
+
+at $\omega<\omega_p$, $\tilde n$ is imaginary, hence EM waves cant propagate 
+
+For example, metals are shiny, but only at optical frequencies. They will transport if it is going to much shorter wavelengths.
+
+e.g. ionosphere
+
+AM radios would be refracted + reflected (~ 1 MHz)
+
+FM radio and TV radios would escape (~100MHz)
+
+
+
+Lets look at the dispersion relation again 
+
+$$\frac{\omega}{k} = \frac{c}{n}$$
+
+we could get
+
+$$\begin{align*}\tilde n&= 1-\frac{\omega_p^2}{\omega^2} = \frac{c^2k^2}{\omega^2}\\
+\Rightarrow \omega&=c^2k^2+\omega_p^2\end{align*}$$
+
+The dispersion relationship would be like
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-2f7f809f4cc3b3a3effc941542807ed4.png)
+
+Hence, we could conclude that 
+
+- waves are dispersive in plasma
+- there are no propagating waves for $\omega<\omega_p$
+- waves with $\omega\approx \omega_p$ are slow
+    $v_g = \frac{d\omega}{dk}\rightarrow0$ as $\omega\rightarrow \omega_p$
+
+We have $2\omega d\omega = 2c^2kdk$
+
+$\Rightarrow \frac{d\omega}{dk} = \frac{c^2k}{\omega} = c\sqrt{1-\frac{\omega_p^2}{\omega^2}}$
+
+We could have end behaviors:
+
+$$\begin{align*}v_g\rightarrow0\quad\text{as}\quad\omega\rightarrow\omega_p\\
+v_g\rightarrow c \quad\text{as}\quad\omega\rightarrow \infty\end{align*}$$
+
+
+
+Let's then take
+
+$$\mathbf E = \mathbf E_0e^{i(\mathbf{k\cdot r}-\omega t)}$$
+
+Choose $\mathbf k$ to be $(0,0,k)$, we have
+
+$$\mathbf P = \frac{-ne^2}{m\epsilon_0\omega^2}(\epsilon_0\mathbf E) = -\left(\frac{\omega_p}{\omega}\right)^2\epsilon_0\mathbf E$$
+
+We could hence get Maxwell's equation
+
+$$\begin{align*}\mathbf{\nabla\times H} &= \frac{\partial\mathbf{\dot{D}}}{\partial t}\quad \mathbf{\nabla\times E} =-\frac{\partial \mathbf B}{\partial t} = -\mu_0\frac{\partial \mathbf H}{\partial t}\\
+\mathbf{\nabla\times(\nabla\times E)} &= -\mu_0\frac{\partial}{\partial t}\mathbf{\nabla\times H}\\
+&= 0\mu_0\frac{\partial^2}{\partial t^2}\mathbf D\\
+\textcolor{brown}{\text{LHS} = \mathbf{\nabla(\nabla\cdot E) - \nabla^2 E}}&= -\mu_0\frac{\partial ^2}{\partial t^2}(\epsilon_0\mathbf{E+P})\end{align*}$$
+
+For the wave, we have 
+
+$\mathbf{\nabla\rightarrow}i\mathbf k$
+$\frac{\partial }{\partial t}\rightarrow -\omega^2\mathbf E$
+$\Rightarrow k^2\mathbf E -\underbrace{\mathbf{k(k\cdot E)}}_{k^2E_z\mathbf{\hat{z}}} = \frac{\omega^2-\omega_p^2}{c^2}\mathbf{E}$
+
+Transverse solutions:$\left(\begin{matrix}1\\0\\0\end{matrix}\right)$ $\left(\begin{matrix}0\\1\\0\end{matrix}\right)$ we have $\omega^2=\omega_p^2+c^2k^2$
+
+As for longitudinal solutions, we have $\left(\begin{matrix}0\\0\\1\end{matrix}\right)$, we have, hence, $\omega^2=\omega_p^2$
+
+We can therefore classify waves in the $\omega$ k graph
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-d2cad00e493857fee1e6681281070e70.png)
+
+## 4.8 Dispersion
+> Refractive index changes with frequency
+
+ - classical theory of dispersion:
+
+model electrons as a classical damped oscillator
+$$m\ddot{x} + m\gamma\dot{x}+ m\omega_0^2x = qE_0e^{-i\omega t}$$
+
+Assume that $x = x_0e^{-i\omega t}$
+$$\begin{align*}(-\omega^2-i\omega\gamma+\omega_0^2)x_0 &= \frac{qE_0}{m}\\
+P &= nqx_0 = \frac{nq^2}{m}E_0\frac{1}{\omega_0^2-\omega^2-i\omega\gamma}\\
+&= \epsilon_0(\tilde \epsilon_r-1)E_0\\
+\tilde{\epsilon_r}&= 1+\frac{nq^2E_0}{\epsilon_0m}\frac{1}{\omega_0^2-\omega-i\omega\gamma}\\
+\tilde n^2&=\tilde\epsilon_r\\
+\text{For a gas, } \tilde{\epsilon} &= 1+ \text{small quantity}\\
+\tilde\epsilon^{\frac{1}{2}}&=1+\frac{1}{2}\text{small quantities}+\cdots\\
+Re(\tilde n)&=1+\frac{nq^2}{2\epsilon_0m}\frac{\omega_0^2-\omega^2}{(\omega_0^2-\omega^2)^2+\omega^2\gamma^2}\\
+Im(\tilde n)&=\frac{nq^2}{2\epsilon_0m}\frac{\gamma\omega}{(\omega_0^2-\omega^2)^2+\omega^2\gamma^2}\end{align*}$$
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-3e7b1668baac6356cac28bab65dca426.png)
+
+As $\omega\rightarrow 0$, $Re(\tilde n)\rightarrow 1+\frac{nq^2}{2q_0\omega_0^2}$, $Im(\tilde n)\rightarrow 0$
+As $\omega\rightarrow \infty$, $Re(\tilde n)\rightarrow 1$, we could get a better illustration, therefore, for the real part and imaginary part of $\tilde n$
+
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-d335d81bd4be70e8f23c62c86ea23b7c.png)
+
+We can also conclude that $Im(\tilde n)$ corresponds to the absorption of light, and $Re(\tilde n)$ corresponds to the refraction of light and generally increases with frequency
+
+The sharp drop in the real part of $\tilde n$ in the real part of $\tilde n$ near $\omega_0$ is called <u>anomalous dispersion</u>
