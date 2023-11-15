@@ -27,7 +27,7 @@ $\nabla^2 V = 0$
 
 这篇文章主要就是要在笛卡尔坐标系下解这个方程，在大二第一学期我们主要使用separation of variable来解，也就是说我们要假设这个V他是等于$X(x)Y(y)Z(z)$的。我们可以举一个具体的例子来熟悉这种方法
 
-<img src="https://pic4.zhimg.com/80/v2-d9a1510ae6106cd47b1fb93536e590e0.png" alt="20231013_143402496_iOS" style="zoom: 25%;" />
+<img src="./images/1_Potential/v2-d9a1510ae6106cd47b1fb93536e590e0.png" alt="20231013_143402496_iOS" style="zoom: 25%;" />
 
 在x = $\pm$b时，$V = V_0$；然后y=0和a的那两个面是接地的。这也就是说Z(z)这一项没有什么用 不妨把他设成1.所以我们现在有
 
@@ -205,7 +205,7 @@ $V(r,\theta)=\overset{\infty}{\underset{l=0}{\sum}}\left(\alpha r^l+\frac{\beta}
 
 其次 我们看一下示意图
 
-<img src="https://pic4.zhimg.com/80/v2-ee07b18b09cb2d1df99c28a6aad825df.png" alt="Image" style="zoom:33%;" />
+<img src="./images/1_Potential/v2-ee07b18b09cb2d1df99c28a6aad825df.png" alt="Image" style="zoom:33%;" />
 
 这个电势貌似和$\phi$没有什么关系！那我们就可以用那个简化版的拉普拉斯方程的解
 
@@ -291,7 +291,7 @@ $$V(\overrightarrow{r})=\frac{1}{4\pi\epsilon_0}\frac{q}{|\overrightarrow{r}-\ov
 
 (unit charge)
 
-![Image](https://pic4.zhimg.com/80/v2-75a2890a27cc57bdc4a8cc0de33dc4c4.png)
+![Image](./images/1_Potential/v2-75a2890a27cc57bdc4a8cc0de33dc4c4.png)
 
 This has azimuthal symmetry, so we can use the above equation
 
@@ -319,7 +319,7 @@ $$V = \frac{1}{4\pi\epsilon_0}\frac{q}{r}\sum^\infty_{l=0}(\frac{r'}{r})^lP_l(co
 
 Thus the general solution for $\overrightarrow{r}$ outside a charge distribution is
 
-![Image](https://pic4.zhimg.com/80/v2-fa8e7e04e3bf3ad313a05bf784d9b2f7.png)
+![Image](./images/1_Potential/v2-fa8e7e04e3bf3ad313a05bf784d9b2f7.png)
 
 $$V(\overrightarrow{r})=\frac{1}{4\pi\epsilon_0}\int_{l=0}^\infty(r')^lP_l(\cos(\gamma))\times\rho(\overrightarrow r')d\tau'$$
 
@@ -354,7 +354,7 @@ Now we can have a nice way of looking at field outside the charges using multipo
 
 Electric field can induce a dipole moment in a neutral atom
 
-<img src="https://pic4.zhimg.com/80/v2-4af8f8b877ec6ec19ad2aa7d7c8b6397.png" alt="Image" style="zoom:33%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-4af8f8b877ec6ec19ad2aa7d7c8b6397.png" alt="Image" style="zoom:33%;" />
 
 And the electric moment is defined as $\mathbf p = \alpha \mathbf E$ where $\alpha$ is the **polarizability** of the atom. A list of polarizability can be seen from the handout.
 
@@ -362,7 +362,7 @@ If, for example, the outside E ~ $10^6$ V/m, then the displacement would be abou
 
 Also, there are polar molecules which already have a dipole moment, but they are randomized because of the present of inner energy $K_B T$
 
-<img src="https://pic4.zhimg.com/80/v2-b3f7c7ce3043aaeead6c6e814ae380d4.png" alt="Image" style="zoom: 50%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-b3f7c7ce3043aaeead6c6e814ae380d4.png" alt="Image" style="zoom: 50%;" />
 
 However, an E field can line them up
 
@@ -372,7 +372,7 @@ If they are not aligned, then the polarization is zero.
 
 > Question: what is the electric potential produced by a box of dipoles?
 
-<img src="https://pic4.zhimg.com/80/v2-0aebbe347369877395d1f736af205cc8.png" alt="Image" style="zoom:25%;" />
+<img src="./images/2_Electric_Field_In_Matter/v2-0aebbe347369877395d1f736af205cc8.png" alt="Image" style="zoom:25%;" />
 
 $$
 \begin{align*}V(\mathbf R) &=\frac{1}{4\pi\epsilon_0}\int \frac{\mathbf P(\mathbf r)\cdot\mathbf R}{|R|^3}d^3\mathbf \tau'\\ &=\frac{1}{4\pi \epsilon_0}\int\mathbf{P(r)}\cdot\mathbf\nabla \frac{1}{R}d\tau'\\\nabla \frac{1}{R} &= -\frac{\mathbf R}{R^3}\\
@@ -494,7 +494,7 @@ but $E_\perp$ may not be continuous if we have bound charges at the interface
 
 *Example*
 
-![Image](https://pic4.zhimg.com/80/v2-e013e9f7011c9cea9e3df1e9ddef4a85.png)
+![Image](./images/2_Electric_Field_In_Matter/v2-e013e9f7011c9cea9e3df1e9ddef4a85.png)
 
 $$
 \Rightarrow E_0//x
@@ -641,7 +641,7 @@ Current loop:
 
 $$A(r) = \frac{\mu_0I}{4\pi} \oint \frac{1}{|\mathbf{r}-\mathbf{r'}|}d\mathbf{l'}$$
 
-![Image](https://pic4.zhimg.com/80/v2-a7283b9bf163233310b2636b0c22e68a.png)
+![Image](./images/3_Magnetization/v2-a7283b9bf163233310b2636b0c22e68a.png)
 
 recall the expansion
 
@@ -680,7 +680,7 @@ $$\mathbf B(\mathbf r) = \nabla\times\mathbf A = \frac{\mu_0}{4\pi r^3}  m\sin(\
 
 which is same as electric dipole with $\frac{P}{4\pi\epsilon_0}\rightarrow\frac{\mu_0m}{4\pi}$
 
-![Image](https://pic4.zhimg.com/80/v2-b98211361837f1214ba4377c0e33c180.png)
+![Image](./images/3_Magnetization/v2-b98211361837f1214ba4377c0e33c180.png)
 
 Field patterns look the same at large r, but at small r, the magnetic field is not singular.
 
@@ -692,9 +692,9 @@ There are three main effects:
 1. diamagnetism $\rightarrow \mathbf{M} ∝ -\mathbf B $ and that effect is very weak
 > All materials exihibits it!
 
-2. Paramagnetism $\rightarrow \mathbf{M} ∝ +\mathbf B$ and it's stronger
+2. Para-magnetism $\rightarrow \mathbf{M} ∝ +\mathbf B$ and it's stronger
 > That is often shown in materials with unpaired "spins"
-> ![Image](https://pic4.zhimg.com/80/v2-be71f0aeb778b21ad0e923d3e0c7ce7c.png)
+> ![Image](./images/3_Magnetization/v2-be71f0aeb778b21ad0e923d3e0c7ce7c.png)
 > ($\mathbf{M} ∝ \mathbf B$ but only at small B)
 > Example: $CuSO_4\cdot5H_2O$
 
@@ -805,9 +805,9 @@ However, $H_1^{\perp} = H_2^{\perp}$ is not true because the $\nabla \cdot H = -
 
 $\nabla\times \mathbf H = \mathbf J_f \Rightarrow H_1^{\parallel} - H_2^{\parallel}$ (Assuming there is no surface free currents)
 
-But $B^\parallel$ is not continuous because you can have bound surfce currents at interface and $\nabla\times\mathbf B = \mu_0(\mathbf J_f+\mathbf J_b)$
+But $B^\parallel$ is not continuous because you can have bound surface currents at interface and $\nabla\times\mathbf B = \mu_0(\mathbf J_f+\mathbf J_b)$
 
-$$\Rightarrow E^\parallel, D^\perp,H^\parallel, B^\perp are continuous$$
+$$\Rightarrow E^\parallel, D^\perp,H^\parallel, B^\perp \text{are continuous}$$
 
 Assuming there is no surface free charges/currents
 
@@ -830,14 +830,14 @@ Then we can use the Laplace equation to solve for $\phi_m$
 ## 3.6 Ferromagnetism
 
 > One way to define  magnitization is  = $\lim_{\delta v\rightarrow 0}\frac{\sum_{i\in \delta v} m_i}{\delta v}$
-> Microscopally, ferromaget has M $\ne$ 0, even in B = 0
+> Microscopely, ferromagnet has M $\ne$ 0, even in B = 0
 > The reason for ferromagnetism is the (what will be learnt next term), the *exchange interaction*
 > Only in certain materials:
 > Fe, Co, Ni, Gd
 
 There is an energy cost due to the stray field of the magnetic dipoles. 
 
-![Image](https://pic4.zhimg.com/80/v2-37fef396b890a953c83746200894eb23.png)
+![Image](./images/3_Magnetization/v2-37fef396b890a953c83746200894eb23.png)
 
 From the picture having stray field, it can be seen that on the tip and bottom of the field, there is a divergence of magnitization, leading to divergence in H. Meaning that field spreads out whenever you have magnetic moment going into the surface and not flowing out.  
 
@@ -846,11 +846,11 @@ The energy cost would be
 $$\int\frac{B^2}{2\mu_0}d\tau$$
 $\Rightarrow$ It is energetic flavorable to form domains
 
-![Image](https://pic4.zhimg.com/80/v2-3e8f970cbb5e9d129b6f85b9f2f26f3b.png)
+![Image](./images/3_Magnetization/v2-3e8f970cbb5e9d129b6f85b9f2f26f3b.png)
 
 This will cost low energy since there is no stray field and hence no divergence in H. (Average over the surface, M is zero)
 
-![Image](https://pic4.zhimg.com/80/v2-1dddfc47563a7bfe1965f162b4dbdc41.png)
+![Image](./images/3_Magnetization/v2-1dddfc47563a7bfe1965f162b4dbdc41.png)
 
 When applying a B field, the correlated domain is expanded and finally they are all aligned.
 
@@ -858,14 +858,14 @@ So, the magnetization process involves moving domain walls.
 
 $\Rightarrow$ The process is highly non-linear
 $\Rightarrow$ hysterisis loop
-![Image](https://pic4.zhimg.com/80/v2-d3701ddc549859182bd617dfdde1c37e.png)
+![Image](./images/3_Magnetization/v2-d3701ddc549859182bd617dfdde1c37e.png)
 States that is interesting
 1. Saturation (right up)
 2. Remanence (middle up)
 3. Coercivity (left middle)
 Better picture is in handout
 
-The field which is positive but M is zero is called coersive field.
+The field which is positive but M is zero is called coercive field.
 
 We can modle this as
 
@@ -876,7 +876,7 @@ and $\mu_r(H)$ is a multivalued function (because it depends on histroy)
 ### Hard materials
 $H_c$, $M_r$ are large
  - difficult to move domain walls
- - So it is hard to magnitize and demagnitize
+ - So it is hard to magnetize and demagnetize
  - so it is used for permanent magnets
 
 ### Soft materials
@@ -884,11 +884,11 @@ $H_c$, $M_r$ are small
  - easy to move domain walls
  - so it is used for transformers, motors, etc.
 
-Example: Magnitization of a ring 
-Iron ring, radius r, and current I with N terms used to magnitize the ring
-![Image](https://pic4.zhimg.com/80/v2-a9fbe05aa6f76224574afebc89dc2a82.png)
+Example: Magnetization of a ring 
+Iron ring, radius r, and current I with N terms used to magnetize the ring
+![Image](./images/3_Magnetization/v2-a9fbe05aa6f76224574afebc89dc2a82.png)
 
-Have a Amperian loop around the ring, then use
+Have a Ampere loop around the ring, then use
 $$\oint\mathbf H\cdot d\mathbf l = NI$$
 Since H only depends on the free current, it is favorable for us to use it.
 
@@ -901,7 +901,7 @@ Hence B = $\mu_0\mu_rH = \mu_0\mu_r\frac{NI}{2\pi r}$
 
 Now lets put a gap in the ring
 
-![Image](https://pic4.zhimg.com/80/v2-96ab8ac13db4acd2616ef45e808c95a0.png)
+![Image](./images/3_Magnetization/v2-96ab8ac13db4acd2616ef45e808c95a0.png)
 
 The cutout, x, would much less than r
 
@@ -920,7 +920,7 @@ $$B_{gap} = \frac{\mu_0\mu_rNI}{(2\pi r - x)+\mu_r x}$$
 
 If $\mu_r >> \frac{2\pi r}{x}$, then $B_{gap}$ becomes about $\frac{\mu_0NI}{x}$
 
-Is could be very large if x is small. But for that condition to work, you need $mu_rNI$ to be very large.
+Is could be very large if x is small. But for that condition to work, you need $\mu_rNI$ to be very large.
 
 # 4 Electromagnetic waves in material
 
@@ -1080,7 +1080,7 @@ Which gives the same answer because $v = \frac{c}{n} = \frac{\omega}{k} = \frac{
 
 which is this wave
 
-<img src="https://pic4.zhimg.com/80/v2-9b07722264d36e00a457d3cc47c8b487.jpg" alt="Image" style="zoom:33%;" />
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-9b07722264d36e00a457d3cc47c8b487.jpg" alt="Image" style="zoom:33%;" />
 
 ## 4.3 conductors
 
@@ -1252,14 +1252,14 @@ By dotting everything, and then
 $$\mathbf{\nabla\cdot(E\times H)} = \mathbf{H\cdot\nabla\times E} - \mathbf{E\cdot\nabla\times H}$$
 $$\mathbf{E\cdot J_f = H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t} - \mathbf{\nabla\cdot(E\times H)}$$
 
-Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ whcih equals to Energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or poyting vector. 
+Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector. 
 
 > How is this working?
 
 Assume that we are using a linear media:
 $$\begin{align*}
-\mathbf E\cdot\frac{\partial \mathbf D}{\partial t} &= \frac{1}{2}\mathbf E\cdot\frac{\partial (\mathbf{E\cdot D})}{\partial t}\\
-\mathbf H\cdot\frac{\partial \mathbf B}{\partial t} &= \frac{1}{2}\mathbf H\cdot\frac{\partial (\mathbf{B\cdot H})}{\partial t}\\
+\mathbf E\cdot\frac{\partial \mathbf D}{\partial t} &= \frac{1}{2}\cdot\frac{\partial (\mathbf{E\cdot D})}{\partial t}\\
+\mathbf H\cdot\frac{\partial \mathbf B}{\partial t} &= \frac{1}{2}\cdot\frac{\partial (\mathbf{B\cdot H})}{\partial t}\\
 \end{align*}$$
 Remember that
 $$\left.\begin{align*} \frac{1}{2}\epsilon_0E^2 &= \frac{1}{2}DE \\
@@ -1276,14 +1276,14 @@ We could say that, therefore $\mathbf S$ is the energy flux density, or the rate
 
 Example: a capacitor
 
-![Image](https://pic4.zhimg.com/80/v2-d088b7588af2470c7dc937a7174eae40.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png" alt="Image" style="zoom:33%;" />
 
 The stored energy increase at rate 
 
 $$\dot{U} = \frac{Q}{C}\frac{dQ}{dt} \quad U = \frac{Q^2}{2C}$$
 
 also:
-![Image](https://pic4.zhimg.com/80/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png" alt="Image" style="zoom:33%;" />
 
 Hence, we have 
 
@@ -1293,7 +1293,7 @@ where $S = EH = \frac{Q}{dc}\frac{\frac{dQ}{dt}}{2\pi r}$
 
 There is another example
 
-![Image](https://pic4.zhimg.com/80/v2-b8d5f75737c4aa4fc3c712948225873b.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-b8d5f75737c4aa4fc3c712948225873b.png" alt="Image" style="zoom:33%;" />
 
 $$\begin{align*}H \cdot S\pi a &= I\\
 E &= \frac{V}{l}\\
@@ -1314,7 +1314,7 @@ For a perfect absorber, where $P_{rad}$ is the radiation pressure
 
 **Example** For a plane EM wave in free space, we have 
 
-$$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+frac{1}{2}\frac{B^2}{\mu_0}\\
+$$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}\\
 \text{but } E &= cB\\
 \Rightarrow U &= \epsilon_0E^2\\
 \mathbf E &= \frac{1}{2}E_0\cos(kz-\omega t)\mathbf{\hat{x}}\\
@@ -1323,7 +1323,7 @@ $$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+frac{1}{2}\frac{B^2}{\mu_0}\\
 \Rightarrow <u>&=\frac{1}{2}\epsilon_0E_0^2\\
 <S> &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
 Where I is the intensity of wave
-$$\Rightarrow P_rad = \left\{
+$$\Rightarrow P_{rad} = \left\{
 \begin{matrix}\frac{1}{2}\epsilon_0E_0^2&& \text{perfect absorber}\\
 \epsilon_0E_0^2 &&\text{perfect reflector}\end{matrix}
 \right.$$
@@ -1359,7 +1359,7 @@ which is called Eddington Limit (Upper limit of luminosity of stars that accrete
 ## 4.6 EM waves - reflection and refraction 
 
 
-![Image](https://pic4.zhimg.com/80/v2-da9af6819e3276f16d52726a47e1eb99.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
 
 Left: 
 $$E_ie^{i(k_1z - \omega t)}+ E_re^{i(-k_1z-\omega t)}$$
@@ -1395,7 +1395,7 @@ Lets now have angles
 $\mathbf E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
 
-![Image](https://pic4.zhimg.com/80/v2-7a46e4731b1aef18f0962e6b138feafe.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
 
 
 $$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}-\omega t)}$$
@@ -1411,13 +1411,11 @@ $\Rightarrow \mathbf{k_i\cdot r = k_r\cdot r = k_t\cdot r}$ for all x, y at z=0
 
 Take $\mathbf r = (0,y,0)$
 
-$\Rightarrow \mathbf{k_i, k_r}$ and $\mathbf k_t$ all lie iin the xz plane
-(*the plane of incidence*)
+$\Rightarrow \mathbf{k_i, k_r}$ and $\mathbf k_t$ all lie in the xz plane (*the plane of incidence*)
 
 Take $\mathbf r = (x,0,0)$ so $\mathbf{k_i\cdot r} = k\sin \theta_x$
 
-
-$$\begin{align*}|\mathbf{k_i|=k_r|}&=k_1\\
+$$\begin{align*}|\mathbf{k_i|=|k_r|}&=k_1\\
 |\mathbf{k_t}| &= k_2\\
 \Rightarrow \underbrace{k_1\sin\theta_i = k_1\sin\theta_r}_{\theta_i = \theta_r\text{, law of reflection}} &= k_2\sin\theta_t\end{align*}$$
 
@@ -1436,9 +1434,9 @@ We work in those steps
 1. $\mathbf E$ **in the plane of incidence**
 > "parallel-like" = parallel
 
-Remid that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
+Remind that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
 
-![Image](https://pic4.zhimg.com/80/v2-846b6b5fd823b66d914d2dc8f0cbe159.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-846b6b5fd823b66d914d2dc8f0cbe159.png)
 
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
@@ -1456,7 +1454,7 @@ Now look for Fresnel equations for p-polarizations
 2. $\mathbf E$ **perpendicular to the plane of incidence**
 > "s-like" s = senkrecht = perpendicular
 
-![Image](https://pic4.zhimg.com/80/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
 
 
 |  | incident | reflected  | transmitted |
@@ -1468,7 +1466,7 @@ Now look for Fresnel equations for p-polarizations
 $E_\parallel$ continuous
 $$\Rightarrow E_y\text{continuous} \quad E_i+E_r = E_t$$
 $H_\parallel$ continuous
-$$\Rightarrow H_x continuous \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
+$$\Rightarrow H_x \text{continuous} \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
 
 Remember that 
 
@@ -1499,7 +1497,6 @@ t = \frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_t+\theta_i)}
 
 We also have
 
-
 $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 \sin\theta_t &= \frac{n_1}{n_2}\sin\theta_i\\
 \cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
@@ -1507,7 +1504,7 @@ $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 
 Fresnel equations: 
 
-/ $n_1\cos\theta_i$ on top and bottom 
+ $n_1\cos\theta_i$ on top and bottom 
 
 $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
 \beta&=\frac{n_2}{n_1}
@@ -1522,9 +1519,9 @@ Remember, EM waves have an energy flux given by
 
 $$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
 
-Intensify coefficients
+Intensity coefficients
 
-$$T = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
+$$R = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
 (\frac{\alpha-\beta}{\alpha+\beta})^2 \quad (p)\\
 (\frac{1-\alpha\beta}{1+\alpha\beta})^2 \quad (s)
 \end{matrix}\right.$$
@@ -1590,7 +1587,7 @@ $$\begin{align*}
 **Method of producing polarized light**
 
 
-![Image](https://pic4.zhimg.com/80/v2-c63f126caa420d0b48e1c0b329782a06.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-c63f126caa420d0b48e1c0b329782a06.png)
 
 Reflectted light polarized with $\mathbf E$ perpendicular to the plane of incidence
 
@@ -1711,9 +1708,9 @@ we would only focus on cold plasma
 
 Lets consider a slab of plasma
 
-![Image](https://pic4.zhimg.com/80/v2-cda26930e63c970d8f5143f39734a44f.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-cda26930e63c970d8f5143f39734a44f.png)
 
-having nnumber density n
+having number density n
 
 the positive ions are fixed in place, and now lets move electrons by distance $\xi$
 
@@ -1740,7 +1737,7 @@ where $\tilde n^2$ is the refractive index, and that can be imaginary
 
 we could plot the relation between $\omega$ and $\epsilon_r$
 
-![Image](https://pic4.zhimg.com/80/v2-9e0535588696eb60239c846f041b4009.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-9e0535588696eb60239c846f041b4009.png)
 
 at $\omega>\omega_p$, $\tilde n$ is real, hence EM waves can propagate
 
@@ -1767,7 +1764,7 @@ $$\begin{align*}\tilde n&= 1-\frac{\omega_p^2}{\omega^2} = \frac{c^2k^2}{\omega^
 
 The dispersion relationship would be like
 
-![Image](https://pic4.zhimg.com/80/v2-2f7f809f4cc3b3a3effc941542807ed4.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-2f7f809f4cc3b3a3effc941542807ed4.png)
 
 Hence, we could conclude that 
 
@@ -1814,7 +1811,7 @@ As for longitudinal solutions, we have $\left(\begin{matrix}0\\0\\1\end{matrix}\
 
 We can therefore classify waves in the $\omega$ k graph
 
-![Image](https://pic4.zhimg.com/80/v2-d2cad00e493857fee1e6681281070e70.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-d2cad00e493857fee1e6681281070e70.png)
 
 ## 4.8 Dispersion
 > Refractive index changes with frequency
@@ -1835,12 +1832,12 @@ P &= nqx_0 = \frac{nq^2}{m}E_0\frac{1}{\omega_0^2-\omega^2-i\omega\gamma}\\
 Re(\tilde n)&=1+\frac{nq^2}{2\epsilon_0m}\frac{\omega_0^2-\omega^2}{(\omega_0^2-\omega^2)^2+\omega^2\gamma^2}\\
 Im(\tilde n)&=\frac{nq^2}{2\epsilon_0m}\frac{\gamma\omega}{(\omega_0^2-\omega^2)^2+\omega^2\gamma^2}\end{align*}$$
 
-![Image](https://pic4.zhimg.com/80/v2-3e7b1668baac6356cac28bab65dca426.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-3e7b1668baac6356cac28bab65dca426.png)
 
 As $\omega\rightarrow 0$, $Re(\tilde n)\rightarrow 1+\frac{nq^2}{2q_0\omega_0^2}$, $Im(\tilde n)\rightarrow 0$
 As $\omega\rightarrow \infty$, $Re(\tilde n)\rightarrow 1$, we could get a better illustration, therefore, for the real part and imaginary part of $\tilde n$
 
-![Image](https://pic4.zhimg.com/80/v2-d335d81bd4be70e8f23c62c86ea23b7c.png)
+![Image](./images/4_Electromagnetic_Waves_in_material/v2-d335d81bd4be70e8f23c62c86ea23b7c.png)
 
 We can also conclude that $Im(\tilde n)$ corresponds to the absorption of light, and $Re(\tilde n)$ corresponds to the refraction of light and generally increases with frequency
 
@@ -1852,5 +1849,90 @@ The sharp drop in the real part of $\tilde n$ in the real part of $\tilde n$ nea
 
 > An example of guided wave
 
-Lets think in 
+Lets think in a super long circuit
+
+![Image](./images/5_Confined_EM_Waves/v2-97eae67ce5e16a7d7871eac9e044788a.png)
+
+If the time for signal to transverse the circuit is not $\ll\frac{1}{\omega}$, we need to consider the wave behavior of the signal.
+
+![Image](./images/5_Confined_EM_Waves/v2-f53e6742e390bc903ae3441fa918ecb8.png)
+
+We could have 
+
+> Remember: we are defining capacitance as C ==per unit length==, and inductance L ==per unit length==
+
+$$\begin{align*}
+Q &= (C\delta z)v\\
+\frac{dQ}{dt}&= C\delta z\frac{\partial v}{\partial t}\\
+&=I(z,t)-I(z+dz,t)\\
+&=\delta z\left(\frac{-\partial I}{\partial z}\right)\\
+\Rightarrow\frac{\partial I}{\partial z}&=-C\frac{\partial v}{\partial t}\quad\text{ equation 1}\\
+\Phi&=(L\delta z)I\\
+\frac{d\Phi}{dt}&=L\delta z\frac{\partial I}{\partial t}\\
+&=V(z,t)-V(z+\delta z,t)\\
+&=\delta z\left(-\frac{\partial V}{\partial z}\right)\\
+\Rightarrow \frac{\partial V}{\partial z}&=-L\frac{\partial I}{\partial t}\quad\text{equation 2}
+\end{align*}$$
+
+If we plug equation 1 into equation 2, we get
+
+$$\frac{\partial^2 V}{\partial t^2}=\frac{1}{LC}\frac{\partial^2 V}{\partial z^2}$$
+
+For wavelike situations, we have 
+
+$$V(z,t) = f(z-vt)+g(z+vt)$$
+
+where $f$ and $g$ are arbitrary functions, and $v$ is the wave velocity which is $\frac{1}{\sqrt{LC}}$.
+
+> Note: the wave velocity is not the speed of light, but the speed of the wave in the circuit.
+
+From equation 1, wee could have 
+$$\frac{d V}{d I} = \frac{1}{C\frac{d z}{d t}} = \frac{1}{C\frac{1}{\sqrt{LC}}} = \frac{1}{\sqrt{\frac{L}{C}}}$$
+The impedance would be, then $Z = \pm\sqrt{\frac{L}{C}}$ where thr $\pm$ is the direction of the wave.
+
+Instantaneous power
+
+$$\begin{align*} &= V\underbrace{(\frac{1}{2}LI^2+\frac{1}{2}CV^2)}_{\text{energy stored/length}}\\
+&= \frac{1}{2}I^2z+\frac{1}{2}\frac{V^2}{z} = I^2z = \frac{LC}{z} = IV\end{align*}$$
+
+<u>Example</u>
+
+We have coaxial transmission line, which has 
+
+$$C = \frac{Q}{V}$$
+> Remember: $C$ is per unit length
+
+![Image](./images/5_Confined_EM_Waves/v2-182182c1195ec5a07f21f1c395721b79.png)
+
+We would have 
+
+$$E\cdot 2\pi rl = \frac{Q}{\epsilon_r\epsilon_0}$$
+
+![Image](./images/5_Confined_EM_Waves/v2-b008ec96ad71db570df7a2d693f50580.png)
+
+Hence, we have
+
+$$\begin{align*}
+V &= -\int_b^a\frac{Q}{2\pi\epsilon_0\epsilon_r}dr = \frac{Q}{2\pi\epsilon_0\epsilon_r}\ln\frac{b}{a}\\
+\Rightarrow C &= \frac{2\pi\epsilon_r\epsilon_0}{\ln\frac{b}{a}}\\
+B\cdot2\pi r&=\mu_r\mu_0I\\
+\Phi &= frac{\Phi}{I} = \frac{\mu_r\mu_0}{2\pi}\ln\frac{b}{a}\\
+\end{align*}$$
+
+Where, remember, $\Phi$ is the flux per unit length
+
+$$\begin{align*}\Rightarrow \sigma &= \frac{1}{\sqrt{LC}} = \underbrace{\frac{1}{\sqrt{\mu_r\mu_0\epsilon_r\epsilon_0}}}_{\text{Speed of light in dielectric}}\\
+Z&=\sqrt{\frac{L}{C}} = \sqrt{\frac{\mu_r\mu_0}{\epsilon_0\epsilon_r}}\frac{\ln\frac{b}{a}}{2\pi}\end{align*}$$
+
+Then, a common type of transmission line:
+
+<u>Example</u>: Strip transmission line
+
+
+
+$a\gg d$ so we could ignore edge effect
+
+
+
+
 

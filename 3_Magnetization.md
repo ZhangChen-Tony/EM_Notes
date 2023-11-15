@@ -65,7 +65,7 @@ There are three main effects:
 1. diamagnetism $\rightarrow \mathbf{M} ∝ -\mathbf B $ and that effect is very weak
 > All materials exihibits it!
 
-2. Paramagnetism $\rightarrow \mathbf{M} ∝ +\mathbf B$ and it's stronger
+2. Para-magnetism $\rightarrow \mathbf{M} ∝ +\mathbf B$ and it's stronger
 > That is often shown in materials with unpaired "spins"
 > ![Image](./images/3_Magnetization/v2-be71f0aeb778b21ad0e923d3e0c7ce7c.png)
 > ($\mathbf{M} ∝ \mathbf B$ but only at small B)
@@ -178,9 +178,9 @@ However, $H_1^{\perp} = H_2^{\perp}$ is not true because the $\nabla \cdot H = -
 
 $\nabla\times \mathbf H = \mathbf J_f \Rightarrow H_1^{\parallel} - H_2^{\parallel}$ (Assuming there is no surface free currents)
 
-But $B^\parallel$ is not continuous because you can have bound surfce currents at interface and $\nabla\times\mathbf B = \mu_0(\mathbf J_f+\mathbf J_b)$
+But $B^\parallel$ is not continuous because you can have bound surface currents at interface and $\nabla\times\mathbf B = \mu_0(\mathbf J_f+\mathbf J_b)$
 
-$$\Rightarrow E^\parallel, D^\perp,H^\parallel, B^\perp are continuous$$
+$$\Rightarrow E^\parallel, D^\perp,H^\parallel, B^\perp \text{are continuous}$$
 
 Assuming there is no surface free charges/currents
 
@@ -203,7 +203,7 @@ Then we can use the Laplace equation to solve for $\phi_m$
 ## 3.6 Ferromagnetism
 
 > One way to define  magnitization is  = $\lim_{\delta v\rightarrow 0}\frac{\sum_{i\in \delta v} m_i}{\delta v}$
-> Microscopally, ferromaget has M $\ne$ 0, even in B = 0
+> Microscopely, ferromagnet has M $\ne$ 0, even in B = 0
 > The reason for ferromagnetism is the (what will be learnt next term), the *exchange interaction*
 > Only in certain materials:
 > Fe, Co, Ni, Gd
@@ -238,7 +238,7 @@ States that is interesting
 3. Coercivity (left middle)
 Better picture is in handout
 
-The field which is positive but M is zero is called coersive field.
+The field which is positive but M is zero is called coercive field.
 
 We can modle this as
 
@@ -249,7 +249,7 @@ and $\mu_r(H)$ is a multivalued function (because it depends on histroy)
 ### Hard materials
 $H_c$, $M_r$ are large
  - difficult to move domain walls
- - So it is hard to magnitize and demagnitize
+ - So it is hard to magnetize and demagnetize
  - so it is used for permanent magnets
 
 ### Soft materials
@@ -257,11 +257,11 @@ $H_c$, $M_r$ are small
  - easy to move domain walls
  - so it is used for transformers, motors, etc.
 
-Example: Magnitization of a ring 
-Iron ring, radius r, and current I with N terms used to magnitize the ring
+Example: Magnetization of a ring 
+Iron ring, radius r, and current I with N terms used to magnetize the ring
 ![Image](./images/3_Magnetization/v2-a9fbe05aa6f76224574afebc89dc2a82.png)
 
-Have a Amperian loop around the ring, then use
+Have a Ampere loop around the ring, then use
 $$\oint\mathbf H\cdot d\mathbf l = NI$$
 Since H only depends on the free current, it is favorable for us to use it.
 
@@ -293,4 +293,4 @@ $$B_{gap} = \frac{\mu_0\mu_rNI}{(2\pi r - x)+\mu_r x}$$
 
 If $\mu_r >> \frac{2\pi r}{x}$, then $B_{gap}$ becomes about $\frac{\mu_0NI}{x}$
 
-Is could be very large if x is small. But for that condition to work, you need $mu_rNI$ to be very large.
+Is could be very large if x is small. But for that condition to work, you need $\mu_rNI$ to be very large.
