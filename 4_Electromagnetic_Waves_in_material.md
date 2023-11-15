@@ -328,14 +328,14 @@ By dotting everything, and then
 $$\mathbf{\nabla\cdot(E\times H)} = \mathbf{H\cdot\nabla\times E} - \mathbf{E\cdot\nabla\times H}$$
 $$\mathbf{E\cdot J_f = H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t} - \mathbf{\nabla\cdot(E\times H)}$$
 
-Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ whcih equals to Energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or poyting vector. 
+Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector. 
 
 > How is this working?
 
 Assume that we are using a linear media:
 $$\begin{align*}
-\mathbf E\cdot\frac{\partial \mathbf D}{\partial t} &= \frac{1}{2}\mathbf E\cdot\frac{\partial (\mathbf{E\cdot D})}{\partial t}\\
-\mathbf H\cdot\frac{\partial \mathbf B}{\partial t} &= \frac{1}{2}\mathbf H\cdot\frac{\partial (\mathbf{B\cdot H})}{\partial t}\\
+\mathbf E\cdot\frac{\partial \mathbf D}{\partial t} &= \frac{1}{2}\cdot\frac{\partial (\mathbf{E\cdot D})}{\partial t}\\
+\mathbf H\cdot\frac{\partial \mathbf B}{\partial t} &= \frac{1}{2}\cdot\frac{\partial (\mathbf{B\cdot H})}{\partial t}\\
 \end{align*}$$
 Remember that
 $$\left.\begin{align*} \frac{1}{2}\epsilon_0E^2 &= \frac{1}{2}DE \\
@@ -352,14 +352,14 @@ We could say that, therefore $\mathbf S$ is the energy flux density, or the rate
 
 Example: a capacitor
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png" alt="Image" style="zoom:33%;" />
 
 The stored energy increase at rate 
 
 $$\dot{U} = \frac{Q}{C}\frac{dQ}{dt} \quad U = \frac{Q^2}{2C}$$
 
 also:
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png" alt="Image" style="zoom:33%;" />
 
 Hence, we have 
 
@@ -369,7 +369,7 @@ where $S = EH = \frac{Q}{dc}\frac{\frac{dQ}{dt}}{2\pi r}$
 
 There is another example
 
-![Image](./images/4_Electromagnetic_Waves_in_material/v2-b8d5f75737c4aa4fc3c712948225873b.png)
+<img src="./images/4_Electromagnetic_Waves_in_material/v2-b8d5f75737c4aa4fc3c712948225873b.png" alt="Image" style="zoom:33%;" />
 
 $$\begin{align*}H \cdot S\pi a &= I\\
 E &= \frac{V}{l}\\
@@ -390,7 +390,7 @@ For a perfect absorber, where $P_{rad}$ is the radiation pressure
 
 **Example** For a plane EM wave in free space, we have 
 
-$$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+frac{1}{2}\frac{B^2}{\mu_0}\\
+$$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}\\
 \text{but } E &= cB\\
 \Rightarrow U &= \epsilon_0E^2\\
 \mathbf E &= \frac{1}{2}E_0\cos(kz-\omega t)\mathbf{\hat{x}}\\
@@ -399,7 +399,7 @@ $$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+frac{1}{2}\frac{B^2}{\mu_0}\\
 \Rightarrow <u>&=\frac{1}{2}\epsilon_0E_0^2\\
 <S> &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
 Where I is the intensity of wave
-$$\Rightarrow P_rad = \left\{
+$$\Rightarrow P_{rad} = \left\{
 \begin{matrix}\frac{1}{2}\epsilon_0E_0^2&& \text{perfect absorber}\\
 \epsilon_0E_0^2 &&\text{perfect reflector}\end{matrix}
 \right.$$
@@ -487,13 +487,11 @@ $\Rightarrow \mathbf{k_i\cdot r = k_r\cdot r = k_t\cdot r}$ for all x, y at z=0
 
 Take $\mathbf r = (0,y,0)$
 
-$\Rightarrow \mathbf{k_i, k_r}$ and $\mathbf k_t$ all lie iin the xz plane
-(*the plane of incidence*)
+$\Rightarrow \mathbf{k_i, k_r}$ and $\mathbf k_t$ all lie in the xz plane (*the plane of incidence*)
 
 Take $\mathbf r = (x,0,0)$ so $\mathbf{k_i\cdot r} = k\sin \theta_x$
 
-
-$$\begin{align*}|\mathbf{k_i|=k_r|}&=k_1\\
+$$\begin{align*}|\mathbf{k_i|=|k_r|}&=k_1\\
 |\mathbf{k_t}| &= k_2\\
 \Rightarrow \underbrace{k_1\sin\theta_i = k_1\sin\theta_r}_{\theta_i = \theta_r\text{, law of reflection}} &= k_2\sin\theta_t\end{align*}$$
 
@@ -512,7 +510,7 @@ We work in those steps
 1. $\mathbf E$ **in the plane of incidence**
 > "parallel-like" = parallel
 
-Remid that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
+Remind that $\mathbf{E,H}$ and $\mathbf k$ form a right-handed system
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-846b6b5fd823b66d914d2dc8f0cbe159.png)
 
@@ -544,7 +542,7 @@ Now look for Fresnel equations for p-polarizations
 $E_\parallel$ continuous
 $$\Rightarrow E_y\text{continuous} \quad E_i+E_r = E_t$$
 $H_\parallel$ continuous
-$$\Rightarrow H_x continuous \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
+$$\Rightarrow H_x \text{continuous} \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
 
 Remember that 
 
@@ -575,7 +573,6 @@ t = \frac{2\sin\theta_t\cos\theta_i}{\sin(\theta_t+\theta_i)}
 
 We also have
 
-
 $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 \sin\theta_t &= \frac{n_1}{n_2}\sin\theta_i\\
 \cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
@@ -583,7 +580,7 @@ $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 
 Fresnel equations: 
 
-/ $n_1\cos\theta_i$ on top and bottom 
+ $n_1\cos\theta_i$ on top and bottom 
 
 $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
 \beta&=\frac{n_2}{n_1}
@@ -598,9 +595,9 @@ Remember, EM waves have an energy flux given by
 
 $$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
 
-Intensify coefficients
+Intensity coefficients
 
-$$T = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
+$$R = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
 (\frac{\alpha-\beta}{\alpha+\beta})^2 \quad (p)\\
 (\frac{1-\alpha\beta}{1+\alpha\beta})^2 \quad (s)
 \end{matrix}\right.$$
@@ -789,7 +786,7 @@ Lets consider a slab of plasma
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-cda26930e63c970d8f5143f39734a44f.png)
 
-having nnumber density n
+having number density n
 
 the positive ions are fixed in place, and now lets move electrons by distance $\xi$
 
