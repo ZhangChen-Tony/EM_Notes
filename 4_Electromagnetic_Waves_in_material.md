@@ -84,7 +84,7 @@ $\Rightarrow v = \frac{c}{n}$ where c = $\frac{1}{\sqrt{\epsilon_0\mu_0}}$ and n
 
 ### Plane waves solutions
 
-Lets choose propagation parallel to z, and hence 
+Lets choose propagation parallel to z, and hence
 $$\mathbf{\frac{\partial \Psi}{\partial x}} = \mathbf{\frac{\partial \Psi}{\partial y}} = 0$$
 
 remember that $\mathbf{\nabla\cdot E}=0\Rightarrow \frac{\partial E_z}{\partial z} = 0$
@@ -148,7 +148,7 @@ Remember that $\mathbf{\nabla\times E = -\dot B}$, and use E, B $\propto e^{i(\m
 $$
 \begin{align*}i\mathbf{k\times E} &= -(-i\omega)\mathbf B\\
 &= i\omega\mu_0\mu_r\mathbf H\\
-\Rightarrow Z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}} 
+\Rightarrow Z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}}
 \end{align*}
 $$
 
@@ -243,13 +243,13 @@ Sub into original equation
 $$k = \frac{\mu\sigma\omega}{2\kappa} = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)^2}+1}$$
 $$\Rightarrow \mathbf E = \mathbf E_0\hat{\mathbf{x}}\underbrace{e^{-\kappa z}}_{e^{-\frac{z}{\delta}}}e^{i(\mathbf{k\cdot r}-\omega t)}$$
 
-Where $\delta = \frac{1}{\kappa}$ is the *skin depth* 
+Where $\delta = \frac{1}{\kappa}$ is the *skin depth*
 
 *Reminder*: Good conductors have $\sigma \gg \epsilon\omega$
 
 $$k = \kappa = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\frac{\sigma}{\epsilon\omega}} = \sqrt{\frac{\mu\omega\sigma}{2}}$$
 
-We could therefore have 
+We could therefore have
 
 $$\nabla^2\mathbf E = \mu\sigma\frac{\partial \mathbf E}{\partial t} + \mu\epsilon\frac{\partial^2 \mathbf E}{\partial t^2}$$
 
@@ -312,7 +312,7 @@ $$\begin{align*}\mathbf\delta F &= \delta q(\mathbf{E +v\times B})\\
 
 where $\mathbf J_f$ eaquals to $\rho\mathbf v$
 
-Rate of work on charges 
+Rate of work on charges
 $$\begin{align*}\mathbf F &= \frac{dw}{dt} \\
 &= \mathbf{E\cdot J_f}d\tau\\
 &= \frac{d}{d t}\int \underbrace{u_{mech}}_{\text{Energy density}}d\tau\end{align*}$$
@@ -328,7 +328,7 @@ By dotting everything, and then
 $$\mathbf{\nabla\cdot(E\times H)} = \mathbf{H\cdot\nabla\times E} - \mathbf{E\cdot\nabla\times H}$$
 $$\mathbf{E\cdot J_f = H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t} - \mathbf{\nabla\cdot(E\times H)}$$
 
-Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector. 
+Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector.
 
 > How is this working?
 
@@ -354,14 +354,14 @@ Example: a capacitor
 
 <img src="./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png" alt="Image" style="zoom:33%;" />
 
-The stored energy increase at rate 
+The stored energy increase at rate
 
 $$\dot{U} = \frac{Q}{C}\frac{dQ}{dt} \quad U = \frac{Q^2}{2C}$$
 
 also:
 <img src="./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png" alt="Image" style="zoom:33%;" />
 
-Hence, we have 
+Hence, we have
 
 $$\dot{U} = S\cdot 2\pi r d = \frac{Q}{c}\frac{dQ}{dt}$$
 
@@ -388,16 +388,16 @@ $$P_{rad} = \frac{<S>}{c}$$
 
 For a perfect absorber, where $P_{rad}$ is the radiation pressure
 
-**Example** For a plane EM wave in free space, we have 
+**Example** For a plane EM wave in free space, we have
 
 $$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}\\
 \text{but } E &= cB\\
 \Rightarrow U &= \epsilon_0E^2\\
 \mathbf E &= \frac{1}{2}E_0\cos(kz-\omega t)\mathbf{\hat{x}}\\
 &= E_0\cos^2(kz-\omega t)\\
-<E^2> &= \frac{1}{2}E_0^2\\
-\Rightarrow <u>&=\frac{1}{2}\epsilon_0E_0^2\\
-<S> &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
+\langle E^2\rangle &= \frac{1}{2}E_0^2\\
+\Rightarrow \langle u\rangle&=\frac{1}{2}\epsilon_0E_0^2\\
+\langle S\rangle &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
 Where I is the intensity of wave
 $$\Rightarrow P_{rad} = \left\{
 \begin{matrix}\frac{1}{2}\epsilon_0E_0^2&& \text{perfect absorber}\\
@@ -422,8 +422,6 @@ Outward:
 
 Force/unit mass = $k\frac{L}{4\pi R^2 C}$ where k is the opacity, which is area/unit mass, which is a constant
 
-
-
 Inward: Force due to gravity/unit mass = $\frac{GM}{R^2}$
 
 Since they balance, we have
@@ -432,15 +430,14 @@ $$\Rightarrow L = \frac{4\pi CGM}{k}$$
 
 which is called Eddington Limit (Upper limit of luminosity of stars that accrete (isotopically))
 
-## 4.6 EM waves - reflection and refraction 
-
+## 4.6 EM waves - reflection and refraction
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
 
-Left: 
+Left:
 $$E_ie^{i(k_1z - \omega t)}+ E_re^{i(-k_1z-\omega t)}$$
 
-Right: 
+Right:
 $$E_te^{i(k_2z-\omega t)}$$
 
 Using electromagnetic boundary conditions, we could get
@@ -461,7 +458,7 @@ Where $Z = \sqrt{\frac{\mu}{\epsilon}}$
 
 We expect $S_\text{incident} = S_\text{reflected} + S_\text{transmitted}$
 
-Where they equal to 
+Where they equal to
 
 $\frac{E_i^2}{Z_1}+\frac{E_r^2}{Z_1}=\frac{E_t^2}{Z_2}$
 
@@ -470,9 +467,7 @@ separately
 Lets now have angles
 $\mathbf E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
-
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
-
 
 $$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}-\omega t)}$$
 
@@ -495,7 +490,7 @@ $$\begin{align*}|\mathbf{k_i|=|k_r|}&=k_1\\
 |\mathbf{k_t}| &= k_2\\
 \Rightarrow \underbrace{k_1\sin\theta_i = k_1\sin\theta_r}_{\theta_i = \theta_r\text{, law of reflection}} &= k_2\sin\theta_t\end{align*}$$
 
-Remember that $\frac{\omega}{k}=\frac{c}{n}$, And the last two would lead to 
+Remember that $\frac{\omega}{k}=\frac{c}{n}$, And the last two would lead to
 
 $$\frac{\sin\theta_t}{\sin\theta_i} = \frac{k_1}{k_2} = \frac{n_2}{n_1}\quad\text{law of refraction, or snell's law}$$
 
@@ -532,7 +527,6 @@ Now look for Fresnel equations for p-polarizations
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
 
-
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
 |$E_y$|$E_i$|$E_r$|$E_t$|
@@ -544,14 +538,14 @@ $$\Rightarrow E_y\text{continuous} \quad E_i+E_r = E_t$$
 $H_\parallel$ continuous
 $$\Rightarrow H_x \text{continuous} \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
 
-Remember that 
+Remember that
 
 $$Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}\text{while } \mu_r = 1$$
 
 Let's set $\mu_r = 1$
 Then, $Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}$
 
-So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's. 
+So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's.
 
 **e.g. Fresnel equations for p-polarization**
 
@@ -578,9 +572,9 @@ $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 \cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
 \end{align*}$$
 
-Fresnel equations: 
+Fresnel equations:
 
- $n_1\cos\theta_i$ on top and bottom 
+ $n_1\cos\theta_i$ on top and bottom
 
 $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
 \beta&=\frac{n_2}{n_1}
@@ -591,7 +585,7 @@ $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta
 | $r$ | $\frac{\alpha-\beta}{\alpha+\beta}$ | $\frac{1-\alpha\beta}{1+\alpha\beta}$ |
 | $t$ | $\frac{2\alpha}{\alpha+\beta}$ | $\frac{2}{1+\alpha\beta}$ |
 
-Remember, EM waves have an energy flux given by 
+Remember, EM waves have an energy flux given by
 
 $$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
 
@@ -604,7 +598,7 @@ $$R = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
 
 $$T = \frac{I_t}{I_i} = |t|^2\frac{n_2}{n_1}\frac{\cos\theta_t}{cos\theta_i}$$
 
-where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles. 
+where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles.
 
 $$T = |t|^2\alpha\beta = \left\{\begin{matrix}
 \alpha\beta(\frac{2}{\alpha+\beta})^2 \quad (p)\\
@@ -613,7 +607,7 @@ $$T = |t|^2\alpha\beta = \left\{\begin{matrix}
 
 Lets check in certain cases
 
- - $\theta_i = 0 \Rightarrow \alpha = 1$
+- $\theta_i = 0 \Rightarrow \alpha = 1$
 
 $$\begin{align*}r_s = r_p = \frac{1-\beta}{1+\beta} = \frac{n_1-n_2}{n_1+n_2}\\
 t_s = t_p = \frac{2}{1+\beta} = \frac{2n_1}{n_1+n_2}\\
@@ -633,18 +627,18 @@ $\Rightarrow$ 4% of light is reflected, 96% is transmitted
 
 Lets take another go at differnet angle
 
- - $\theta_i = 90^\circ$, and set $\beta >1$
+- $\theta_i = 90^\circ$, and set $\beta >1$
 
  $\sin\theta_i = 1\quad \cos\theta_i = 0$
  $\Rightarrow \alpha \rightarrow \infty$
 $$\begin{align*}r_p &= 1\quad r_s = -1\\
 t_p &= 0 \quad t_s = 0\end{align*}$$
 
- - now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
+- now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
 
  At $\theta_c = \sin^{-1}\beta$, $\alpha = \frac{1}{\cos\theta_c}\sqrt{1-(\frac{\sin\theta_c}{\beta})^2} = 0$
 
- Hence, we have 
+ Hence, we have
 $r_p = -1\quad r_s = 1$
 $t_p = \frac{2}{\beta}\quad t_s = 2$
 
@@ -662,7 +656,6 @@ $$\begin{align*}
 
 **Method of producing polarized light**
 
-
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-c63f126caa420d0b48e1c0b329782a06.png)
 
 Reflectted light polarized with $\mathbf E$ perpendicular to the plane of incidence
@@ -679,7 +672,7 @@ n_1\sin\theta_i = n_2\sin\theta_t\\
 Since $n_2<n_1$, there will be total internal reflection when $\sin\theta_t>1$
 
 For transmitted wave, its like
- - $e^{i(\mathbf{k\cdot r}-\omega t)}$ in medium 
+- $e^{i(\mathbf{k\cdot r}-\omega t)}$ in medium
    = $e^{i(k_2[x\sin\theta_t+z\cos\theta_t]-\omega t)}$
    since $z\cos\theta t = 1-\sin^2 \theta_t$ = $\underbrace{e^{i(k_2x\sin\theta_t-\omega_t)}}_{wave}\underbrace{e^{-(\sin^2\theta_t-1)^{\frac{1}{2}}k_2z}}_{e^{-z/\delta}}$ where $\delta = \frac{\lambda_2}{2\pi}\frac{1}{(\sin^2\theta_t-1)^{\frac{1}{2}}}$
     This is called an *evanescent wave*
@@ -714,7 +707,7 @@ $$\begin{align*}\mathbf{\nabla\times E} &= -\dot{\mathbf{B}} = i\omega\mathbf B\
 &=\frac{1}{i\omega}\left(\begin{matrix}-\partial_zE_t\\ 0 \\ \partial_xE_t\end{matrix}\right)\\
 &=\left(\begin{matrix}\frac{iE_t}{\omega\delta}\\0\\k_2\sin\theta_tE_t/\omega\end{matrix}\right)\end{align*}$$
 
-$\Rightarrow B_z$ is in phase with $E_y$ 
+$\Rightarrow B_z$ is in phase with $E_y$
     $\Rightarrow$ transport of energy along x
     $B_x$ is out of phase with $E_y$
     $\Rightarrow$ no transport of energy along z
@@ -780,8 +773,6 @@ Its density varies from $10^2 - 10^{35}kg/m^3$, temperature is $10^0-10^{13}k$
 
 we would only focus on cold plasma
 
-
-
 Lets consider a slab of plasma
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-cda26930e63c970d8f5143f39734a44f.png)
@@ -796,9 +787,7 @@ $$\begin{align*}m\ddot{\xi}& = -eE\quad\text{where} E = \frac{ne\xi}{\epsilon_0}
 \Rightarrow \ddot{\xi}+\omega_p^2\xi&=0\quad\text{which is SHM}\\
 \text{where } \omega_p^2&=\frac{ne^2}{\epsilon_0m}\end{align*}$$
 
-This is the SHM at the <u>plasma frequency $\omega_p$</u> 
-
-
+This is the SHM at the <u>plasma frequency $\omega_p$</u>
 
 Now, lets drive charges with EM wave $\mathbf Ee^{-i\omega t}$ (we could ignore B if $v\ll c$)
 
@@ -809,7 +798,7 @@ $$\begin{align*}\mathbf P &= -ne\mathbf\xi_0=-\frac{ne^2}{m\omega^2}\mathbf E\\
 &= (\epsilon_r-1)\epsilon_0\mathbf E\\
 \Rightarrow \underbrace{\epsilon_r}_{\tilde n^2} &= 1-\frac{\omega_p^2}{\omega^2}\end{align*}$$
 
-where $\tilde n^2$ is the refractive index, and that can be imaginary 
+where $\tilde n^2$ is the refractive index, and that can be imaginary
 
 we could plot the relation between $\omega$ and $\epsilon_r$
 
@@ -817,7 +806,7 @@ we could plot the relation between $\omega$ and $\epsilon_r$
 
 at $\omega>\omega_p$, $\tilde n$ is real, hence EM waves can propagate
 
-at $\omega<\omega_p$, $\tilde n$ is imaginary, hence EM waves cant propagate 
+at $\omega<\omega_p$, $\tilde n$ is imaginary, hence EM waves cant propagate
 
 For example, metals are shiny, but only at optical frequencies. They will transport if it is going to much shorter wavelengths.
 
@@ -827,9 +816,7 @@ AM radios would be refracted + reflected (~ 1 MHz)
 
 FM radio and TV radios would escape (~100MHz)
 
-
-
-Lets look at the dispersion relation again 
+Lets look at the dispersion relation again
 
 $$\frac{\omega}{k} = \frac{c}{n}$$
 
@@ -842,7 +829,7 @@ The dispersion relationship would be like
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-2f7f809f4cc3b3a3effc941542807ed4.png)
 
-Hence, we could conclude that 
+Hence, we could conclude that
 
 - waves are dispersive in plasma
 - there are no propagating waves for $\omega<\omega_p$
@@ -857,8 +844,6 @@ We could have end behaviors:
 
 $$\begin{align*}v_g\rightarrow0\quad\text{as}\quad\omega\rightarrow\omega_p\\
 v_g\rightarrow c \quad\text{as}\quad\omega\rightarrow \infty\end{align*}$$
-
-
 
 Let's then take
 
@@ -875,7 +860,7 @@ $$\begin{align*}\mathbf{\nabla\times H} &= \frac{\partial\mathbf{\dot{D}}}{\part
 &= 0\mu_0\frac{\partial^2}{\partial t^2}\mathbf D\\
 \textcolor{brown}{\text{LHS} = \mathbf{\nabla(\nabla\cdot E) - \nabla^2 E}}&= -\mu_0\frac{\partial ^2}{\partial t^2}(\epsilon_0\mathbf{E+P})\end{align*}$$
 
-For the wave, we have 
+For the wave, we have
 
 $\mathbf{\nabla\rightarrow}i\mathbf k$
 $\frac{\partial }{\partial t}\rightarrow -\omega^2\mathbf E$
@@ -892,7 +877,7 @@ We can therefore classify waves in the $\omega$ k graph
 ## 4.8 Dispersion
 > Refractive index changes with frequency
 
- - classical theory of dispersion:
+- classical theory of dispersion:
 
 model electrons as a classical damped oscillator
 $$m\ddot{x} + m\gamma\dot{x}+ m\omega_0^2x = qE_0e^{-i\omega t}$$

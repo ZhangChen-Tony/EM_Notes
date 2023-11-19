@@ -1008,7 +1008,7 @@ $\Rightarrow v = \frac{c}{n}$ where c = $\frac{1}{\sqrt{\epsilon_0\mu_0}}$ and n
 
 ### Plane waves solutions
 
-Lets choose propagation parallel to z, and hence 
+Lets choose propagation parallel to z, and hence
 $$\mathbf{\frac{\partial \Psi}{\partial x}} = \mathbf{\frac{\partial \Psi}{\partial y}} = 0$$
 
 remember that $\mathbf{\nabla\cdot E}=0\Rightarrow \frac{\partial E_z}{\partial z} = 0$
@@ -1072,7 +1072,7 @@ Remember that $\mathbf{\nabla\times E = -\dot B}$, and use E, B $\propto e^{i(\m
 $$
 \begin{align*}i\mathbf{k\times E} &= -(-i\omega)\mathbf B\\
 &= i\omega\mu_0\mu_r\mathbf H\\
-\Rightarrow Z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}} 
+\Rightarrow Z &= \left|\frac{\mathbf E}{\mathbf H}\right| = \sqrt{\frac{\mu_0\mu_r\omega}{k}}
 \end{align*}
 $$
 
@@ -1167,13 +1167,13 @@ Sub into original equation
 $$k = \frac{\mu\sigma\omega}{2\kappa} = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\sqrt{1+\left(\frac{\sigma}{\epsilon\omega}\right)^2}+1}$$
 $$\Rightarrow \mathbf E = \mathbf E_0\hat{\mathbf{x}}\underbrace{e^{-\kappa z}}_{e^{-\frac{z}{\delta}}}e^{i(\mathbf{k\cdot r}-\omega t)}$$
 
-Where $\delta = \frac{1}{\kappa}$ is the *skin depth* 
+Where $\delta = \frac{1}{\kappa}$ is the *skin depth*
 
 *Reminder*: Good conductors have $\sigma \gg \epsilon\omega$
 
 $$k = \kappa = \sqrt{\frac{\mu\epsilon}{2}}\omega\sqrt{\frac{\sigma}{\epsilon\omega}} = \sqrt{\frac{\mu\omega\sigma}{2}}$$
 
-We could therefore have 
+We could therefore have
 
 $$\nabla^2\mathbf E = \mu\sigma\frac{\partial \mathbf E}{\partial t} + \mu\epsilon\frac{\partial^2 \mathbf E}{\partial t^2}$$
 
@@ -1236,7 +1236,7 @@ $$\begin{align*}\mathbf\delta F &= \delta q(\mathbf{E +v\times B})\\
 
 where $\mathbf J_f$ eaquals to $\rho\mathbf v$
 
-Rate of work on charges 
+Rate of work on charges
 $$\begin{align*}\mathbf F &= \frac{dw}{dt} \\
 &= \mathbf{E\cdot J_f}d\tau\\
 &= \frac{d}{d t}\int \underbrace{u_{mech}}_{\text{Energy density}}d\tau\end{align*}$$
@@ -1252,7 +1252,7 @@ By dotting everything, and then
 $$\mathbf{\nabla\cdot(E\times H)} = \mathbf{H\cdot\nabla\times E} - \mathbf{E\cdot\nabla\times H}$$
 $$\mathbf{E\cdot J_f = H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t} - \mathbf{\nabla\cdot(E\times H)}$$
 
-Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector. 
+Where we call $\mathbf{H\cdot\underbrace{\nabla\times E}_{-\frac{\partial \mathbf B}{\partial t}} - E\cdot}\frac{\partial\mathbf D}{\partial t}$ "$\frac{\partial}{\partial t}u_{EM}$" (remember that $u_{EM} = \frac{1}{2}(\mathbf{B\cdot H+E\cdot D})$ which equals to energy stored in EM field per unit volume) and $\mathbf{\nabla\cdot(E\times H)}$ as "$\mathbf{S = E\times H}$" or Poynting vector.
 
 > How is this working?
 
@@ -1278,14 +1278,14 @@ Example: a capacitor
 
 <img src="./images/4_Electromagnetic_Waves_in_material/v2-d088b7588af2470c7dc937a7174eae40.png" alt="Image" style="zoom:33%;" />
 
-The stored energy increase at rate 
+The stored energy increase at rate
 
 $$\dot{U} = \frac{Q}{C}\frac{dQ}{dt} \quad U = \frac{Q^2}{2C}$$
 
 also:
 <img src="./images/4_Electromagnetic_Waves_in_material/v2-4ccafe8a5aa7916f3f2efee820ae1c91.png" alt="Image" style="zoom:33%;" />
 
-Hence, we have 
+Hence, we have
 
 $$\dot{U} = S\cdot 2\pi r d = \frac{Q}{c}\frac{dQ}{dt}$$
 
@@ -1312,16 +1312,16 @@ $$P_{rad} = \frac{<S>}{c}$$
 
 For a perfect absorber, where $P_{rad}$ is the radiation pressure
 
-**Example** For a plane EM wave in free space, we have 
+**Example** For a plane EM wave in free space, we have
 
 $$\begin{align*}U &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}\\
 \text{but } E &= cB\\
 \Rightarrow U &= \epsilon_0E^2\\
 \mathbf E &= \frac{1}{2}E_0\cos(kz-\omega t)\mathbf{\hat{x}}\\
 &= E_0\cos^2(kz-\omega t)\\
-<E^2> &= \frac{1}{2}E_0^2\\
-\Rightarrow <u>&=\frac{1}{2}\epsilon_0E_0^2\\
-<S> &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
+\langle E^2\rangle &= \frac{1}{2}E_0^2\\
+\Rightarrow \langle u\rangle&=\frac{1}{2}\epsilon_0E_0^2\\
+\langle S\rangle &= \frac{1}{2}\epsilon_0E_0^2c = I\end{align*}$$
 Where I is the intensity of wave
 $$\Rightarrow P_{rad} = \left\{
 \begin{matrix}\frac{1}{2}\epsilon_0E_0^2&& \text{perfect absorber}\\
@@ -1346,8 +1346,6 @@ Outward:
 
 Force/unit mass = $k\frac{L}{4\pi R^2 C}$ where k is the opacity, which is area/unit mass, which is a constant
 
-
-
 Inward: Force due to gravity/unit mass = $\frac{GM}{R^2}$
 
 Since they balance, we have
@@ -1356,15 +1354,14 @@ $$\Rightarrow L = \frac{4\pi CGM}{k}$$
 
 which is called Eddington Limit (Upper limit of luminosity of stars that accrete (isotopically))
 
-## 4.6 EM waves - reflection and refraction 
-
+## 4.6 EM waves - reflection and refraction
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-da9af6819e3276f16d52726a47e1eb99.png)
 
-Left: 
+Left:
 $$E_ie^{i(k_1z - \omega t)}+ E_re^{i(-k_1z-\omega t)}$$
 
-Right: 
+Right:
 $$E_te^{i(k_2z-\omega t)}$$
 
 Using electromagnetic boundary conditions, we could get
@@ -1385,7 +1382,7 @@ Where $Z = \sqrt{\frac{\mu}{\epsilon}}$
 
 We expect $S_\text{incident} = S_\text{reflected} + S_\text{transmitted}$
 
-Where they equal to 
+Where they equal to
 
 $\frac{E_i^2}{Z_1}+\frac{E_r^2}{Z_1}=\frac{E_t^2}{Z_2}$
 
@@ -1394,9 +1391,7 @@ separately
 Lets now have angles
 $\mathbf E_re^{i(\mathbf{k_r\cdot r}-\omega t)}$
 
-
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-7a46e4731b1aef18f0962e6b138feafe.png)
-
 
 $$\mathbf{E_i}e^{i(\mathbf{k_i\cdot r}-\omega t)}$$
 
@@ -1419,7 +1414,7 @@ $$\begin{align*}|\mathbf{k_i|=|k_r|}&=k_1\\
 |\mathbf{k_t}| &= k_2\\
 \Rightarrow \underbrace{k_1\sin\theta_i = k_1\sin\theta_r}_{\theta_i = \theta_r\text{, law of reflection}} &= k_2\sin\theta_t\end{align*}$$
 
-Remember that $\frac{\omega}{k}=\frac{c}{n}$, And the last two would lead to 
+Remember that $\frac{\omega}{k}=\frac{c}{n}$, And the last two would lead to
 
 $$\frac{\sin\theta_t}{\sin\theta_i} = \frac{k_1}{k_2} = \frac{n_2}{n_1}\quad\text{law of refraction, or snell's law}$$
 
@@ -1456,7 +1451,6 @@ Now look for Fresnel equations for p-polarizations
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-aa0dccfebe5f767c01bc35ef41ca1236.png)
 
-
 |  | incident | reflected  | transmitted |
 |-----------|----------------|----------------|--------------|
 |$E_y$|$E_i$|$E_r$|$E_t$|
@@ -1468,14 +1462,14 @@ $$\Rightarrow E_y\text{continuous} \quad E_i+E_r = E_t$$
 $H_\parallel$ continuous
 $$\Rightarrow H_x \text{continuous} \quad -\frac{E_i}{Z_1}\cos\theta_i + \frac{E_r}{Z_1}\cos\theta_r = -\frac{E_t}{Z_2}\cos\theta_t$$
 
-Remember that 
+Remember that
 
 $$Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}\text{while } \mu_r = 1$$
 
 Let's set $\mu_r = 1$
 Then, $Z = \sqrt{\frac{\mu_r\mu_0}{\epsilon_r\epsilon_0}} = \frac{Z_0}{n}\quad n = \sqrt{\epsilon_r}$
 
-So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's. 
+So we can replace $Z_i$ with $\frac{1}{n_i}$ in expressions involving ratios of Z's.
 
 **e.g. Fresnel equations for p-polarization**
 
@@ -1502,9 +1496,9 @@ $$\begin{align*}n_1\sin\theta_i &= n_2\sin\theta_t\\
 \cos\theta_t &= \sqrt{1-\sin^2\theta_t} = \sqrt{1-\frac{n_1^2}{n_2^2}\sin^2\theta_i}\\
 \end{align*}$$
 
-Fresnel equations: 
+Fresnel equations:
 
- $n_1\cos\theta_i$ on top and bottom 
+ $n_1\cos\theta_i$ on top and bottom
 
 $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta_i}\sqrt{1-(\frac{n_1}{n_2}\sin\theta_i)^2}\\
 \beta&=\frac{n_2}{n_1}
@@ -1515,7 +1509,7 @@ $$\begin{align*}\alpha &=\frac{\cos\theta_t}{\cos\theta_i} = \frac{1}{\cos\theta
 | $r$ | $\frac{\alpha-\beta}{\alpha+\beta}$ | $\frac{1-\alpha\beta}{1+\alpha\beta}$ |
 | $t$ | $\frac{2\alpha}{\alpha+\beta}$ | $\frac{2}{1+\alpha\beta}$ |
 
-Remember, EM waves have an energy flux given by 
+Remember, EM waves have an energy flux given by
 
 $$S = |\mathbf{E\times H}| = \frac{E^2}{Z}$$
 
@@ -1528,7 +1522,7 @@ $$R = \frac{I_r}{I_i} = |r|^2 = \left\{\begin{matrix}
 
 $$T = \frac{I_t}{I_i} = |t|^2\frac{n_2}{n_1}\frac{\cos\theta_t}{cos\theta_i}$$
 
-where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles. 
+where $\frac{n_2}{n_1}$ is due to waves at ifferent speeds. And $\frac{\cos\theta_t}{\cos\theta_i}$ is due to the wavesfronts at different angles.
 
 $$T = |t|^2\alpha\beta = \left\{\begin{matrix}
 \alpha\beta(\frac{2}{\alpha+\beta})^2 \quad (p)\\
@@ -1537,7 +1531,7 @@ $$T = |t|^2\alpha\beta = \left\{\begin{matrix}
 
 Lets check in certain cases
 
- - $\theta_i = 0 \Rightarrow \alpha = 1$
+- $\theta_i = 0 \Rightarrow \alpha = 1$
 
 $$\begin{align*}r_s = r_p = \frac{1-\beta}{1+\beta} = \frac{n_1-n_2}{n_1+n_2}\\
 t_s = t_p = \frac{2}{1+\beta} = \frac{2n_1}{n_1+n_2}\\
@@ -1557,18 +1551,18 @@ $\Rightarrow$ 4% of light is reflected, 96% is transmitted
 
 Lets take another go at differnet angle
 
- - $\theta_i = 90^\circ$, and set $\beta >1$
+- $\theta_i = 90^\circ$, and set $\beta >1$
 
  $\sin\theta_i = 1\quad \cos\theta_i = 0$
  $\Rightarrow \alpha \rightarrow \infty$
 $$\begin{align*}r_p &= 1\quad r_s = -1\\
 t_p &= 0 \quad t_s = 0\end{align*}$$
 
- - now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
+- now consider $\beta<1$, we cna have total interal reflection for $\theta_i>\theta_c$ where $\theta_c$ is the critical angle = $\beta = \frac{n_2}{n_1}$
 
  At $\theta_c = \sin^{-1}\beta$, $\alpha = \frac{1}{\cos\theta_c}\sqrt{1-(\frac{\sin\theta_c}{\beta})^2} = 0$
 
- Hence, we have 
+ Hence, we have
 $r_p = -1\quad r_s = 1$
 $t_p = \frac{2}{\beta}\quad t_s = 2$
 
@@ -1586,7 +1580,6 @@ $$\begin{align*}
 
 **Method of producing polarized light**
 
-
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-c63f126caa420d0b48e1c0b329782a06.png)
 
 Reflectted light polarized with $\mathbf E$ perpendicular to the plane of incidence
@@ -1603,7 +1596,7 @@ n_1\sin\theta_i = n_2\sin\theta_t\\
 Since $n_2<n_1$, there will be total internal reflection when $\sin\theta_t>1$
 
 For transmitted wave, its like
- - $e^{i(\mathbf{k\cdot r}-\omega t)}$ in medium 
+- $e^{i(\mathbf{k\cdot r}-\omega t)}$ in medium
    = $e^{i(k_2[x\sin\theta_t+z\cos\theta_t]-\omega t)}$
    since $z\cos\theta t = 1-\sin^2 \theta_t$ = $\underbrace{e^{i(k_2x\sin\theta_t-\omega_t)}}_{wave}\underbrace{e^{-(\sin^2\theta_t-1)^{\frac{1}{2}}k_2z}}_{e^{-z/\delta}}$ where $\delta = \frac{\lambda_2}{2\pi}\frac{1}{(\sin^2\theta_t-1)^{\frac{1}{2}}}$
     This is called an *evanescent wave*
@@ -1638,7 +1631,7 @@ $$\begin{align*}\mathbf{\nabla\times E} &= -\dot{\mathbf{B}} = i\omega\mathbf B\
 &=\frac{1}{i\omega}\left(\begin{matrix}-\partial_zE_t\\ 0 \\ \partial_xE_t\end{matrix}\right)\\
 &=\left(\begin{matrix}\frac{iE_t}{\omega\delta}\\0\\k_2\sin\theta_tE_t/\omega\end{matrix}\right)\end{align*}$$
 
-$\Rightarrow B_z$ is in phase with $E_y$ 
+$\Rightarrow B_z$ is in phase with $E_y$
     $\Rightarrow$ transport of energy along x
     $B_x$ is out of phase with $E_y$
     $\Rightarrow$ no transport of energy along z
@@ -1704,8 +1697,6 @@ Its density varies from $10^2 - 10^{35}kg/m^3$, temperature is $10^0-10^{13}k$
 
 we would only focus on cold plasma
 
-
-
 Lets consider a slab of plasma
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-cda26930e63c970d8f5143f39734a44f.png)
@@ -1720,9 +1711,7 @@ $$\begin{align*}m\ddot{\xi}& = -eE\quad\text{where} E = \frac{ne\xi}{\epsilon_0}
 \Rightarrow \ddot{\xi}+\omega_p^2\xi&=0\quad\text{which is SHM}\\
 \text{where } \omega_p^2&=\frac{ne^2}{\epsilon_0m}\end{align*}$$
 
-This is the SHM at the <u>plasma frequency $\omega_p$</u> 
-
-
+This is the SHM at the <u>plasma frequency $\omega_p$</u>
 
 Now, lets drive charges with EM wave $\mathbf Ee^{-i\omega t}$ (we could ignore B if $v\ll c$)
 
@@ -1733,7 +1722,7 @@ $$\begin{align*}\mathbf P &= -ne\mathbf\xi_0=-\frac{ne^2}{m\omega^2}\mathbf E\\
 &= (\epsilon_r-1)\epsilon_0\mathbf E\\
 \Rightarrow \underbrace{\epsilon_r}_{\tilde n^2} &= 1-\frac{\omega_p^2}{\omega^2}\end{align*}$$
 
-where $\tilde n^2$ is the refractive index, and that can be imaginary 
+where $\tilde n^2$ is the refractive index, and that can be imaginary
 
 we could plot the relation between $\omega$ and $\epsilon_r$
 
@@ -1741,7 +1730,7 @@ we could plot the relation between $\omega$ and $\epsilon_r$
 
 at $\omega>\omega_p$, $\tilde n$ is real, hence EM waves can propagate
 
-at $\omega<\omega_p$, $\tilde n$ is imaginary, hence EM waves cant propagate 
+at $\omega<\omega_p$, $\tilde n$ is imaginary, hence EM waves cant propagate
 
 For example, metals are shiny, but only at optical frequencies. They will transport if it is going to much shorter wavelengths.
 
@@ -1751,9 +1740,7 @@ AM radios would be refracted + reflected (~ 1 MHz)
 
 FM radio and TV radios would escape (~100MHz)
 
-
-
-Lets look at the dispersion relation again 
+Lets look at the dispersion relation again
 
 $$\frac{\omega}{k} = \frac{c}{n}$$
 
@@ -1766,7 +1753,7 @@ The dispersion relationship would be like
 
 ![Image](./images/4_Electromagnetic_Waves_in_material/v2-2f7f809f4cc3b3a3effc941542807ed4.png)
 
-Hence, we could conclude that 
+Hence, we could conclude that
 
 - waves are dispersive in plasma
 - there are no propagating waves for $\omega<\omega_p$
@@ -1781,8 +1768,6 @@ We could have end behaviors:
 
 $$\begin{align*}v_g\rightarrow0\quad\text{as}\quad\omega\rightarrow\omega_p\\
 v_g\rightarrow c \quad\text{as}\quad\omega\rightarrow \infty\end{align*}$$
-
-
 
 Let's then take
 
@@ -1799,7 +1784,7 @@ $$\begin{align*}\mathbf{\nabla\times H} &= \frac{\partial\mathbf{\dot{D}}}{\part
 &= 0\mu_0\frac{\partial^2}{\partial t^2}\mathbf D\\
 \textcolor{brown}{\text{LHS} = \mathbf{\nabla(\nabla\cdot E) - \nabla^2 E}}&= -\mu_0\frac{\partial ^2}{\partial t^2}(\epsilon_0\mathbf{E+P})\end{align*}$$
 
-For the wave, we have 
+For the wave, we have
 
 $\mathbf{\nabla\rightarrow}i\mathbf k$
 $\frac{\partial }{\partial t}\rightarrow -\omega^2\mathbf E$
@@ -1816,7 +1801,7 @@ We can therefore classify waves in the $\omega$ k graph
 ## 4.8 Dispersion
 > Refractive index changes with frequency
 
- - classical theory of dispersion:
+- classical theory of dispersion:
 
 model electrons as a classical damped oscillator
 $$m\ddot{x} + m\gamma\dot{x}+ m\omega_0^2x = qE_0e^{-i\omega t}$$
@@ -1842,6 +1827,7 @@ As $\omega\rightarrow \infty$, $Re(\tilde n)\rightarrow 1$, we could get a bette
 We can also conclude that $Im(\tilde n)$ corresponds to the absorption of light, and $Re(\tilde n)$ corresponds to the refraction of light and generally increases with frequency
 
 The sharp drop in the real part of $\tilde n$ in the real part of $\tilde n$ near $\omega_0$ is called <u>anomalous dispersion</u>
+
 
 # 5. Confined EM waves
 
@@ -1928,11 +1914,335 @@ Then, a common type of transmission line:
 
 <u>Example</u>: Strip transmission line
 
-
+![Image](./images/5_Confined_EM_Waves/v2-024730221a540657296391669264affa.png)
 
 $a\gg d$ so we could ignore edge effect
 
+We have
+
+$$\begin{align*}
+C &= \frac{\epsilon_0\epsilon_r a}{d}\\
+L &= \frac{\mu_0\mu_r d}{a}\\
+\sigma &= \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{\mu_0\mu_r\epsilon_0\epsilon_r}}\quad\text{as before}\\
+z &= \sqrt{\frac{L}{C}} = \sqrt{\frac{\mu_0\mu_r}{\epsilon_0\epsilon_r}}\frac{d}{a}\\
+\end{align*}$$
+
+### Boundrary between two transmission lines 
+
+![Image](./images/5_Confined_EM_Waves/v2-7bfe7bf7c3967be4eaa6c00054bc50f3.png)
+
+For x<0, we have
+
+$$V_1 = V_ie^{i(\omega t-kx)}+V_re^{i(\omega t+kx)}$$
+
+For x>0, we have
+
+$$V_2 = V_te^{i(\omega t-k_2x)}$$
+
+At x = 0, we need to match voltages
+
+$$\Rightarrow V_i+V_r = V_t\quad\text{(1)}$$
+
+Match currents, we have
+
+$$\frac{V_i-V_r}{Z_1} = \frac{V_t}{Z_2}\quad\text{(2)}$$
+
+From (1) and (2), we have $r = \frac{Z_2-Z_1}{Z_2+Z_1}$, $t = \frac{2Z_2}{Z_2+Z_1}$
+
+As for power, we would have $\frac{V_i^2}{Z_1} = \frac{V_t^2}{Z_2}+\frac{V_r^2}{Z_1}$ as expected.
+
+### Termination of load
+
+![Image](./images/5_Confined_EM_Waves/v2-dc24af25acafa1aebc45ad10af9863f9.png)
+
+$\frac{V_T}{I_T} = Z_T$ is the boundary condition
+
+$$r = \frac{Z_T-Z_c}{Z_T+Z_c}\quad t = \frac{2Z_T}{Z_T+Z_c}$$
+
+We would also like to consider special cases
+
+||$Z_T$|$r$|$t$|$V_T$|$I_T$|
+|---|---|---|---|---|---|
+|Short circuit|0|-1|0|0|$2I_i$|
+|Open circuit|$\infty$|1|2|$2V_i$|0|
+|Matched|$Z_c$|0|1|$V_i$|$I_i$|
+
+When $Z_T=Z_c$, we would get maximum power transfer
+
+<u>proof</u>
+
+Incident power $= \frac{\langle V_i^2 \rangle}{Z_c} = \frac{1}{2}\frac{V_i^2}{Z_c}$
+
+Power on the load $= \frac{\langle V_T^2 \rangle}{Z_T} = \frac{1}{2}\frac{V_T^2}{Z_T} = \frac{1}{2}\frac{4Z_TV_T^2}{(Z_T+Z_c)^2}\quad\text{(3)}$
+Hence, 
+$$\begin{align*}\frac{\text{Power transmitted}}{\text{incident power}} &= \frac{\text{(3)}}{\text{(4)}}\\
+&=\frac{4Z_cZ_T}{(Z_T+Z_c)^2}\end{align*}$$
+
+$$\begin{align*}\frac{d}{dZ_T}\left[\frac{Z_T}{(Z_T-Z_c)^2}\right] &= 0\\
+\frac{(Z_T+Z_c)^2\cdot 1-2(Z_T+Z_c)Z_T}{(Z_T+Z_c)^2} &=0\\
+\Rightarrow (Z_T+Z_c)\cdot(Z_T+Z_c-2Z_T) &= 0\\
+\Rightarrow Z_T &= Z_c\end{align*}$$
+
+### Input impedance of short sections 
+
+![Image](./images/5_Confined_EM_Waves/v2-08f09fe8878839c1a613e4cc52d16723.png)
+
+Input impedance 
+
+$$\begin{align*}
+Z_{in} &=\frac{V(-l)}{I(-l)}\\
+&= \frac{V_ie^{ikl}+V_re^{-ikl}}{\frac{V_i}{Z_T}e^{ikl}-\frac{V_r}{Z_c}e^{-ikl}}\\
+\text{and }V_r&=rV_i \quad\text{ where}\quad r = \frac{Z_T-Z_c}{Z_T+Z_c}\\
+\Rightarrow Z_{in}&=\left(\frac{Z_T\cos(kl)+iZ_c\sin(kl)}{Z_c\cos(kl)+iZ_T\cos(kl)}\right)Z_c\\
+\text{For a } &\frac{\lambda}{2}\text{ line }(kl=\pi)\\
+&\Rightarrow Z_{in} = Z_T\\
+\text{For a } &\frac{\lambda}{4}\text{ line }(kl=\frac{\pi}{2})\\
+&\Rightarrow Z_{in} = \frac{Z_c}{Z_T}\\
+\end{align*}$$
+
+If $Z_T$ = 0 $\Rightarrow$ $Z_{in} = iZ_c\tan(kl)$
+If $Z_T$ = $\infty$ $\Rightarrow$ $Z_{in} = -iZ_c\cot(kl)$
+
+For a $\frac{\lambda}{4}$ line, we have $Z_{in} = \frac{Z^2_c}{Z_T}$
+
+![Image](./images/5_Confined_EM_Waves/v2-f45c86f9afcfc04330c64a52b69ebc0c.png)
+
+Choose $\frac{Z'^2_c}{Z_T} = Z_c$
+i.e. $Z_c' = \sqrt{Z_cZ_t}$
+The transmission line has been perfectly terninated and there is no reflected wave
+
+## Waveguides
+
+<u>Example of interfering EM waves</u>
+
+Consider 2 EM waves with $E\parallel y$, travelling along $\mathbf k_\pm =\mathbf k_0(\pm\sin\theta,0\cos\theta)$
+
+And we add them up
+
+![Image](./images/5_Confined_EM_Waves/v2-d8b6ddca1a739b6a56dc6b7c49d569f1.png)
+
+$$\begin{align*}
+\mathbf E &= \frac{\mathbf E_0}{2}\left(e^{i(\mathbf k_+\cdot\mathbf r-\omega t)}-e^{i(\mathbf k_-\cdot\mathbf r-\omega t)}\right)\mathbf{\hat y}\\
+&=\frac{\mathbf E_0}{2}e^{i(k_0z\cos\theta-\omega t)}\left(e^{ik_0x\sin\theta}-e^{-ik_0x\sin\theta}\right)\mathbf{\hat y}\\
+&=\mathbf E_0 i\mathbf{\hat y}e^{i(k_0z\cos\theta-\omega t)}\sin(k_0x\sin\theta)\\
+\end{align*}$$
+
+And so it is zero when $k_0x\sin\theta=n\pi$
+i.e. $x=na$ when a$a=\frac{\pi}{k_0\sin\theta}$
+
+Nodal plane would be like 
+
+![Image](./images/5_Confined_EM_Waves/v2-f515a448872cd3ae8e16901662e4f62d.png)
+
+We could, therefore, insert conducting sheets at places where $\mathbf E=0$
+
+This demonstrates (at least in 1 dimension) that guided waves are possible 
+
+When confined
+
+![Image](./images/5_Confined_EM_Waves/v2-18204576f9520a2bba2e39317e35761e.png)
+
+$$\begin{align*}
+\mathbf B &= \frac{1}{c}\frac{\mathbf E_0}{2}e^{i(k_0z\cos\theta-\omega t)}\left[e^{ik_0\sin\theta}\left(\begin{matrix}-\cos\theta\\0\\\sin\theta\end{matrix}\right)+e^{-ik_0\sin\theta}\left(\begin{matrix}-\cos\theta\\0\\-\sin\theta\end{matrix}\right)\right]\\
+&=\frac{\mathbf E_0}{2c}e^{i(k_0z\cos\theta-\omega t)}\left(\begin{matrix}-i\cos\theta\sin(k_0x\sin\theta)\\0\\\sin\theta\cos(k_0x\sin\theta)\end{matrix}\right)\\
+\end{align*}$$
+$\Rightarrow$ only $\mathbf E$ is transverse, $\mathbf B$ is not
+
+### Rectangular waveguide
+
+![Image](./images/5_Confined_EM_Waves/v2-292ab20cb2827c0080002823dd5deba2.png)
+
+Rectangular cross section metal walls
+
+$\mathbf E$, $\mathbf B\propto e^{-i\omega t}$
+$\mathbf E=\mathbf B =0$ inside conductor walls
+$\mathbf B_\perp$ and $\mathbf E_\parallel$ are continuous
+$\Rightarrow \mathbf B_\perp$ and $\mathbf E_\parallel$ are zero at the walls
+
+Consider Maxwell's equations inside waveguide
+$$\begin{align*}
+\mathbf{\nabla\cdot E} &=0\quad\mathbf{\nabla\times E} = i\omega\mathbf B\\
+\mathbf{\nabla\cdot B} &=0\quad\mathbf{\nabla\times B} = \frac{i\omega}{c^2}\mathbf E\\
+\end{align*}$$
+
+Hence, using our old method, we could have
+$$\mathbf{\nabla\times\nabla\times E} = i\omega\mathbf{\nabla\times B} = \frac{\omega^2}{c^2}\mathbf E$$
+Where the LHS would be $\mathbf{\underbrace{\nabla(\nabla\cdot E)}_{0}}-\nabla^2\mathbf E = -\nabla^2\mathbf E$, so we can have a second order differential equation
+
+$$\nabla^2\mathbf E + \frac{\omega^2}{c^2}\mathbf E = 0$$
+
+Which is called the Helmholtz equation
+
+One set of solution of this equation have $\mathbf E$ transverse (called TE modes)
+$\Rightarrow E_z=0$
+Since $\mathbf E_\parallel$ = 0 at walls, we could get 
+$$\left\{\begin{matrix}E_x=0\quad \text{at }\quad y=0,b\\
+E_y=0\quad\text{at }\quad x = 0,a\end{matrix}\right.$$
+And since $E(\mathbf r,t)\propto e^{i(k_gz-\omega t)}$, we would like to put it in Helmholtz equation
+$$\Rightarrow \left[\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\left(\frac{\omega^2}{c^2}-k_g^2\right)\right]\mathbf E = 0$$
+
+> Notice that $E_z$ = 0
+
+<u>Boundary conditions</u>
+$$\begin{align*}E_x&\propto\sin\frac{n\pi y}{b}\\
+E_y&\propto\sin\frac{m\pi x}{a}\\
+E_x &= f(x)\sin\frac{n\pi y}{b}e^{i(k_gz-\omega t)}\\
+E_y &= g(y)\sin\frac{m\pi y}{a}e^{i(k_gz-\omega t)}\end{align*}$$
+
+From $\mathbf{\nabla\cdot E} = 0$, we have $\frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}+\underbrace{\frac{\partial E_z}{\partial z}}_{0} = 0$, hence we could continue
+
+$$\begin{align*}
+\frac{\partial f}{\partial x}\sin\frac{n\pi y}{b}+\frac{\partial g}{\partial y}\sin\frac{m\pi x}{a} = 0\\
+\frac{\partial f}{\partial x}=-\sin\frac{m\pi x}{a}\Rightarrow f(x) = -\frac{a}{m\pi}\cos\frac{m\pi x}{a}\\
+\frac{\partial g}{\partial y}=-\sin\frac{n\pi y}{b}\Rightarrow g(y) = -\frac{b}{n\pi}\cos\frac{n\pi y}{b}\\
+\end{align*}$$
+
+If m = 1, n = 0, we would call it TE10 mode
+
+$$\begin{align*}
+E_x&=E_z = 0\\
+E_y&= -A\frac{\pi}{a}\sin\frac{\pi x}{a}e^{i(k_gz-\omega t)}\\
+B_x&= A\frac{k_g}{\omega}\sin\frac{\pi x}{a}e^{i(k_gz-\omega t)}\\
+B_z &= i\frac{A}{\omega}\left(\frac{\pi}{a}\right)^2\cos\frac{\pi x}{a}e^{i(k_gz-\omega t)}\\
+\end{align*}$$
+
+![Image](./images/5_Confined_EM_Waves/v2-b3905685c69091bad600f3df9417118a.png)
+
+![Image](./images/5_Confined_EM_Waves/v2-5a1020030de143f79441d0edc79ecf35.png)
+
+We could have Helmholtz equation for $B_z$ as well
+$\Rightarrow \frac{\omega^2}{c^2}-k_g^2-\left(\frac{m\pi}{a}\right)^2-\left(\frac{n\pi}{b}\right)^2=0$
+$\Rightarrow \frac{\omega^2}{c^2} = k_g^2+\underbrace{\left(\frac{m\pi}{a}\right)^2+\left(\frac{n\pi}{b}\right)^2}_{k_c^2}$
+Where $k_c$ is the cutoff wave vector
+
+![Image](./images/5_Confined_EM_Waves/v2-caf45cd589b27a614a49d0c4378dfaa3.png)
+
+There is a minumym frequency allowed allowed by the waveguide
+
+$$\begin{align*}\frac{2\omega d\omega}{c^2} = 2k_gdk_g\\
+\Rightarrow V_{\text{group}} = \frac{d\omega}{dk_g} = \frac{c^2k_g}{\omega} = \frac{ck_g}{\sqrt{k_g^2+k_c^2}}\\
+v_{\text{phase}} = \frac{\omega}{k_g} = \frac{c\sqrt{k_g^2+k_c^2}}{k_g}\end{align*}$$
+
+And $v_{\text{group}}v_{\text{phase}} = c^2$
+$$\begin{align*}k_g&=k_0\cos\theta\\
+k_c&=k_0\sin\theta\\
+\frac{\omega}{c}&=k_0\end{align*}$$
+
+![Image](./images/5_Confined_EM_Waves/v2-40744ecd0eb7e83a1b7e26312d0ba5dd.png)
+
+We can, therefore, consider the $TE_{10}$ mode ad an EM wave bouncing off the walls at angle $\theta_0$ with respect to the walls
 
 
 
+# 6. Special relativity and electromagnetism
+> Just a brief introduction, no worries.
+
+We have spacetime four vector ($ct,\mathbf{r}$), who has dot product with itself as
+
+$$\begin{align*}x^\mu x_\mu&= c^2t^2-r^2\\
+\tau^2 &=t^2\left(1-\frac{x^2+y^2+z^2}{c^2t^2}\right)\\
+&=t^2\left(1-\frac{v^2}{c^2}\right)\\
+\Rightarrow\tau&=\frac{t}{\gamma}\\
+\gamma&=\left(1-\frac{v^2}{c^2}\right)^{-\frac{1}{2}}\\
+t&=\gamma\tau\quad\text{time dilation}\end{align*}$$
+
+We also have momentum four vector ($\frac{E}{c},\mathbf{p}$), who has dot product with itself as
+
+$$\begin{align*}p^\mu p_\mu&= \frac{E^2}{c^2}-p^2=m^2c^2\\
+\text{since} E^2&=p^2c^2+m^2c^2\quad(m=\text{rest mass})\end{align*}$$
+
+We also have differential operator $\partial_\mu$ which is written as
+
+$$\partial_\mu=\left(\frac{1}{c}\frac{\partial}{\partial t},\mathbf\nabla\right)$$
+
+We would just introduce this here
+
+Then, we could have current density four vector
+
+$$J_\mu=(c\rho,\mathbf{J})$$
+
+We would consider charge at rest, then
+
+$$J^\mu=(c\rho,0)$$
+
+This could be "boosted" to a moving frame with speed v
+
+$$J'^\mu= (\rho'c,\mathbf J')$$
+
+Where $\rho' = \gamma\rho_0$ due to length contraction and $\mathbf J'=-\gamma\rho_0\mathbf v$
+
+Then, we could have continuity equation
+
+$$\begin{align*}\frac{\partial\rho}{\partial t}+\mathbf\nabla\cdot\mathbf J&=0\\
+\partial_\mu J^\mu &=0\end{align*}$$
+
+In lab frame S, then, we could have
+ - Line of charge, with density $+\lambda$ which is stationary
+ - Line of charge, with density $-\lambda$ which is moving with speed $-v$
+ - Test charge q moving with speed $+u$
+
+![Image](./images/6_Special_relativity_and_EM/v2-28fa7c02ab275f64c7c014b61e51dcfc.png)
+
+remember that the wire itself has no net charge
+
+$$\lambda_{\text{tot}} = +\lambda-\lambda = 0$$
+
+In the test charge frame S', we could have 
+ - Test charge is stationary
+ - \+ charges move backwards at speed u$\Rightarrow \gamma_+ = \gamma_u=\frac{1}{\sqrt{1-\frac{u^2}{c^2}}}$
+ - \- charges move back at $v'=\frac{v+u}{1+\frac{uv}{c^2}}\Rightarrow \gamma_- = \frac{1}{\sqrt{1-\frac{c^2(v+u)^2}{(c^2+uv)^2}}} = \frac{c^2+uv}{\sqrt{(c^2-v^2)(c^2-u^2)}}=\frac{c^2+uv}{\sqrt{(c^2-v^2)(c^2-u^2)}} = \gamma_v\partial_u(1+\cfrac{vu}{c})$
+
+Hence $\gamma'_{\text{tot}} = \gamma_+\lambda-\gamma_-\left(-\frac{\lambda}{\gamma_v}\right)$
+
+In the rest frame of negative charges, they have charge density of $\frac{-\lambda}{\gamma_v}$
+
+$$\begin{align*}
+\lambda'_{\text{tot}} &= \gamma_u\lambda-\lambda\gamma_u\cdot\left(1+\frac{uv}{c^2}\right)\\
+&=-\lambda\gamma_u\frac{uv}{c^2}\\
+E'&=\frac{\lambda'_{\text{tot}}}{2\pi\epsilon_0 r}=\frac{-\lambda uv\gamma_u}{2\pi\epsilon_0 c^2 r}\\
+F'&=qE'=\frac{-\lambda uv\gamma_u q}{2\pi\epsilon_0 c^2 r}\\
+F&=\frac{F'}{\gamma_u} = \frac{-(\lambda v)uq}{2\pi\epsilon_0 c^2 r}\quad\text{note that}\quad \lambda v = I\\
+&=-qu\left(\frac{\mu_0I}{2\pi r}\right) \quad\text{note that}\quad \frac{\mu_0I}{2\pi r} = B\\
+&=-quB\quad\text{Which is lorentz force}
+\end{align*}$$
+
+Lets remember Maxwell's equations
+
+$$\begin{align*}
+\mathbf B &= \mathbf\nabla\times\mathbf A\\
+E &= -\mathbf\nabla V-\frac{\partial\mathbf A}{\partial t}\\
+\text{If}\quad V&\rightarrow V-\frac{\partial\chi}{\partial t}\\
+\text{and} \quad\mathbf A&\rightarrow\mathbf A+\mathbf\nabla\chi\\
+\text{Where }\chi&\text{ is a scalar field}\\
+A^\mu&=(\frac{V}{c},\mathbf A)\\
+A_\mu&=(\frac{V}{c},-\mathbf A)\\
+A_\mu &\rightarrow A_\mu-\partial_\mu\chi\quad\text{gauge transformation}\\
+\end{align*}$$
+
+We would, therefore, need a new object called the field strength tensor
+
+$$\begin{align*}
+F_{\mu\nu}&=\partial_\mu A_\nu-\partial_\nu A_\mu\\
+\text{Where }\mu,\nu&\text{ are indices}\\
+F_{\mu\nu}&\rightarrow F_{\mu\nu}-\partial_\mu\partial_\nu\chi+\partial_\nu\partial_\mu\chi= F_{\mu\nu}\\
+F_{\mu\nu}&=\begin{pmatrix}0&\frac{E_x}{c}&\frac{E_y}{c}&\frac{E_z}{c}\\
+-\frac{E_x}{c}&0&-B_z&B_y\\
+-\frac{E_y}{c}&B_z&0&-B_x\\
+-\frac{E_z}{c}&-B_y&B_x&0\end{pmatrix}\\
+F^{\mu\nu}&=\begin{pmatrix}0&-\frac{E_x}{c}&-\frac{E_y}{c}&-\frac{E_z}{c}\\
+\frac{E_x}{c}&0&-B_z&B_y\\
+\frac{E_y}{c}&B_z&0&-B_x\\
+\frac{E_z}{c}&-B_y&B_z&0\end{pmatrix}\\
+\end{align*}$$
+
+And the function $\partial_\mu F^{\mu\nu} = \mu_0 J^\nu$ gives us the four maxwell's equations. The first half would be simple to deduce, but the second half would be a bit more complicated so we are not going to do it here.
+
+First two: 
+
+$$\begin{align*}
+\partial_i F^{i0}&=\mu_0J^0\\
+\Rightarrow \mathbf\nabla\cdot\mathbf E&=\frac{\rho}{\epsilon_0}\\
+\partial_\mu F^{\mu i}&=\mu_0J^i\\
+\Rightarrow \frac{1}{c^2}\mathbf E+\mathbf{\nabla\times B}&=\mu_0\mathbf J
+\end{align*}$$
 
