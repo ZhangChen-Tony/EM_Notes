@@ -1,6 +1,8 @@
 # 2. Electric polarization
 
 > Matter is not free space, it contains atoms
+>
+> The first two pictures are from Griffith Book
 
 ## 2.1 Bound charges
 
