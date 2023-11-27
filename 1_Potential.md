@@ -271,7 +271,7 @@ it looks like three independent Poisson equations
 
 $$\Rightarrow \overrightarrow{A}(\overrightarrow{r})=\frac{\mu_0}{4\pi}\int\frac{\overrightarrow{J}(\overrightarrow{r'})}{|\overrightarrow{r'}-\overrightarrow{r}|}d\tau'$$
 
-**Example**: If we have a one dimentional current i.e. wire, this current will produce 
+**Example**: If we have a one dimensional current i.e. wire, this current will produce 
 
 $$\overrightarrow{A}(\overrightarrow{r}) = \frac{\mu_0I}{4\pi}\int\frac{\overrightarrow{dl'}}{|\overrightarrow{r'}-\overrightarrow{r}|}$$
 $$\overrightarrow{B}(\overrightarrow{r})=\overrightarrow{\nabla}\times\overrightarrow{A}=\frac{\mu_0}{4\pi}\int\frac{\overrightarrow{dl'}\times(\overrightarrow{r'}-\overrightarrow{r})}{|\overrightarrow{r'}-\overrightarrow{r}|^3}$$

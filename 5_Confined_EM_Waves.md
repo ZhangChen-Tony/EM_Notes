@@ -71,7 +71,7 @@ $$\begin{align*}
 V &= -\int_b^a\frac{Q}{2\pi\epsilon_0\epsilon_r}dr = \frac{Q}{2\pi\epsilon_0\epsilon_r}\ln\frac{b}{a}\\
 \Rightarrow C &= \frac{2\pi\epsilon_r\epsilon_0}{\ln\frac{b}{a}}\\
 B\cdot2\pi r&=\mu_r\mu_0I\\
-\Phi &= frac{\Phi}{I} = \frac{\mu_r\mu_0}{2\pi}\ln\frac{b}{a}\\
+L &= \frac{\Phi}{I} = \frac{\mu_r\mu_0}{2\pi}\ln\frac{b}{a}\\
 \end{align*}$$
 
 Where, remember, $\Phi$ is the flux per unit length
@@ -96,7 +96,7 @@ L &= \frac{\mu_0\mu_r d}{a}\\
 z &= \sqrt{\frac{L}{C}} = \sqrt{\frac{\mu_0\mu_r}{\epsilon_0\epsilon_r}}\frac{d}{a}\\
 \end{align*}$$
 
-### Boundrary between two transmission lines 
+### Boundary between two transmission lines 
 
 ![Image](./images/5_Confined_EM_Waves/v2-7bfe7bf7c3967be4eaa6c00054bc50f3.png)
 
@@ -160,7 +160,7 @@ Input impedance
 
 $$\begin{align*}
 Z_{in} &=\frac{V(-l)}{I(-l)}\\
-&= \frac{V_ie^{ikl}+V_re^{-ikl}}{\frac{V_i}{Z_T}e^{ikl}-\frac{V_r}{Z_c}e^{-ikl}}\\
+&= \frac{V_ie^{ikl}+V_re^{-ikl}}{\frac{V_i}{Z_c}e^{ikl}-\frac{V_r}{Z_c}e^{-ikl}}\\
 \text{and }V_r&=rV_i \quad\text{ where}\quad r = \frac{Z_T-Z_c}{Z_T+Z_c}\\
 \Rightarrow Z_{in}&=\left(\frac{Z_T\cos(kl)+iZ_c\sin(kl)}{Z_c\cos(kl)+iZ_T\cos(kl)}\right)Z_c\\
 \text{For a } &\frac{\lambda}{2}\text{ line }(kl=\pi)\\

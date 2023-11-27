@@ -99,7 +99,7 @@ F^{\mu\nu}&=\begin{pmatrix}0&-\frac{E_x}{c}&-\frac{E_y}{c}&-\frac{E_z}{c}\\
 \frac{E_z}{c}&-B_y&B_z&0\end{pmatrix}\\
 \end{align*}$$
 
-And the function $\partial_\mu F^{\mu\nu} = \mu_0 J^\nu$ gives us the four maxwell's equations. The first half would be simple to deduce, but the second half would be a bit more complicated so we are not going to do it here.
+And the function $\partial_\mu F^{\mu\nu} = \mu_0 J^\nu$ gives us the four Maxwell's equations. The first half would be simple to deduce, but the second half would be a bit more complicated so we are not going to do it here.
 
 First two: 
 
